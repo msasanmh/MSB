@@ -1,0 +1,330 @@
+<!doctype html>
+<html>
+<head>
+    <title>Options - Nimbus Screenshot</title>
+</head>
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection"/>
+<link type="text/css" href="css/tipsy.css" rel="stylesheet"/>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.tipsy.js"></script>
+<script src="js/options.js"></script>
+<body>
+
+<div id="background" style="display: block;"></div>
+<div id="wrapper" class="settings">
+<h1 i18n-content="optionsTitle">Screenshot Settings</h1>
+
+<div class="container">
+<div id="format-setting" class="switch">
+    <h4><span i18n-content="optionsFormat">Image format</span>:</h4>
+    <button class="jpeg" data-format="jpeg"><span class="mark"></span><i class="icon"></i>.JPEG</button>
+    <button class="png" data-format="png"><span class="mark"></span><i class="icon"></i>.PNG</button>
+</div>
+<div id="image-quality" class="section">
+    <h4><span i18n-content="optionsQuality">Image quality</span>:</h4>
+    <div>
+        <input id="quality" class="range" type="range" min="10" max="100" step="1" value="90">
+        <span id="quality-value" class="range-value"><span class="value">90</span> %</span>
+    </div>
+</div>
+
+<!--#format-setting-->
+<div id="save-setting" class="section">
+    <h4><span i18n-content="optionsSave">Save Settings</span>:</h4>
+    <div id="enable-save-as" class="flag">
+        <input id="enablesaveas" type="checkbox" name="saveas" checked >
+        <label for="enablesaveas" i18n-content="optionsSaveAs">Enable "Save As" dialog</label>
+    </div>
+    <div i18n-content="optionsNameTpl">Filename Template:</div>
+    <input id='filenamepattern' type="text" value=""/>
+    <div><span i18n-content="optionsCanUse">You can use</span>: {domain}, {url}, {title}, {date}, {time}</div>
+</div>
+
+<div id="quick-capture" class="section">
+    <h4><span i18n-content="optionsQuickCaptureTitle">Quick capture</span>:</h4>
+
+    <div id="hide-fixed-elements" class="flag">
+        <input id="hidefixedelements" type="checkbox" name="shadow" >
+        <label for="hidefixedelements" i18n-content="optionsHideFixedElements">Hide hixed elements</label>
+    </div>
+
+    <div id="save-crop-position" class="flag">
+        <input id="savecropposition" type="checkbox" name="shadow" >
+        <label for="savecropposition" i18n-content="optionsSaveCropPosition">Save crop position</label>
+    </div>
+
+    <div id="enable-quick-capture" class="flag">
+        <input id="enablequickcapture" type="checkbox" name="shadow" >
+        <label for="enablequickcapture" i18n-content="optionsQuickCaptureEnable">Enable quick capture</label>
+    </div>
+    <!--<img src="images/icons/19x19.png" class="icon"/>-->
+    <div style="position: relative">
+        <div class="switch" id="typeCapture">
+            <button class="visible active" data-type="visible"><span class="mark"></span><i class="icon"></i></button>
+            <button class="area" data-type="area"><span class="mark"></span><i class="icon"></i></button>
+            <button class="scroll" data-type="scroll"><span class="mark"></span><i class="icon"></i></button>
+            <button class="entire" data-type="entire"><span class="mark"></span><i class="icon"></i></button>
+            <button class="window" data-type="window"><span class="mark"></span><i class="icon"></i></button>
+            <button class="blank" data-type="blank"><span class="mark"></span><i class="icon"></i></button>
+        </div>
+        <div class="switch" id="enableEdit">
+            <button class="edit active" data-type="edit"><span class="mark"></span><i class="icon"></i></button>
+            <button class="done" data-type="done"><span class="mark"></span><i class="icon"></i></button>
+            <button class="save" data-type="save"><span class="mark"></span><i class="icon"></i></button>
+            <button class="copy" data-type="copy"><span class="mark"></span><i class="icon"></i></button>
+        </div>
+        <div class="blocker"></div>
+    </div>
+</div>
+
+<div id="shortcut-setting" class="section">
+<h4><span i18n-content="optionsShortcut">Shortcut Settings</span>:</h4>
+
+<div id="hot-key-setting">
+<span>
+						<label><span i18n-content="popupBtnVisible">Visible part of page</span> :</label>
+						<span>Ctrl+Shift+
+							<select id="visible">
+                                <option value="64" hidden="hidden">@</option>
+                                <option value="48">0</option>
+                                <option value="49">1</option>
+                                <option value="50">2</option>
+                                <option value="51">3</option>
+                                <option value="52">4</option>
+                                <option value="53">5</option>
+                                <option value="54">6</option>
+                                <option value="55">7</option>
+                                <option value="56">8</option>
+                                <option value="57">9</option>
+                                <option value="65">A</option>
+                                <option value="66">B</option>
+                                <option value="67">C</option>
+                                <option value="68">D</option>
+                                <option value="69">E</option>
+                                <option value="70">F</option>
+                                <option value="71">G</option>
+                                <option value="72">H</option>
+                                <option value="73">I</option>
+                                <option value="74">J</option>
+                                <option value="75">K</option>
+                                <option value="76">L</option>
+                                <option value="77">M</option>
+                                <option value="78">N</option>
+                                <option value="79">O</option>
+                                <option value="80">P</option>
+                                <option value="81">Q</option>
+                                <option value="82">R</option>
+                                <option value="83">S</option>
+                                <option value="84">T</option>
+                                <option value="85">U</option>
+                                <option value="86">V</option>
+                                <option value="87">W</option>
+                                <option value="88">X</option>
+                                <option value="89">Y</option>
+                                <option value="90">Z</option>
+                            </select>
+						</span>
+					</span>
+
+<div class="clr"></div>
+					<span>
+						<label><span i18n-content="popupBtnArea">Selected area</span> :</label>
+						<span>Ctrl+Shift+
+							<select id="selected">
+                                <option value="64" hidden="hidden">@</option>
+                                <option value="48">0</option>
+                                <option value="49">1</option>
+                                <option value="50">2</option>
+                                <option value="51">3</option>
+                                <option value="52">4</option>
+                                <option value="53">5</option>
+                                <option value="54">6</option>
+                                <option value="55">7</option>
+                                <option value="56">8</option>
+                                <option value="57">9</option>
+                                <option value="65">A</option>
+                                <option value="66">B</option>
+                                <option value="67">C</option>
+                                <option value="68">D</option>
+                                <option value="69">E</option>
+                                <option value="70">F</option>
+                                <option value="71">G</option>
+                                <option value="72">H</option>
+                                <option value="73">I</option>
+                                <option value="74">J</option>
+                                <option value="75">K</option>
+                                <option value="76">L</option>
+                                <option value="77">M</option>
+                                <option value="78">N</option>
+                                <option value="79">O</option>
+                                <option value="80">P</option>
+                                <option value="81">Q</option>
+                                <option value="82">R</option>
+                                <option value="83">S</option>
+                                <option value="84">T</option>
+                                <option value="85">U</option>
+                                <option value="86">V</option>
+                                <option value="87">W</option>
+                                <option value="88">X</option>
+                                <option value="89">Y</option>
+                                <option value="90">Z</option>
+                            </select>
+						</span>
+					</span>
+
+<div class="clr"></div>
+					<span>
+						<label><span i18n-content="popupBtnScroll">Selected & Scroll</span> :</label>
+						<span>Ctrl+Shift+
+							<select id="scroll">
+                                <option value="64" hidden="hidden">@</option>
+                                <option value="48">0</option>
+                                <option value="49">1</option>
+                                <option value="50">2</option>
+                                <option value="51">3</option>
+                                <option value="52">4</option>
+                                <option value="53">5</option>
+                                <option value="54">6</option>
+                                <option value="55">7</option>
+                                <option value="56">8</option>
+                                <option value="57">9</option>
+                                <option value="65">A</option>
+                                <option value="66">B</option>
+                                <option value="67">C</option>
+                                <option value="68">D</option>
+                                <option value="69">E</option>
+                                <option value="70">F</option>
+                                <option value="71">G</option>
+                                <option value="72">H</option>
+                                <option value="73">I</option>
+                                <option value="74">J</option>
+                                <option value="75">K</option>
+                                <option value="76">L</option>
+                                <option value="77">M</option>
+                                <option value="78">N</option>
+                                <option value="79">O</option>
+                                <option value="80">P</option>
+                                <option value="81">Q</option>
+                                <option value="82">R</option>
+                                <option value="83">S</option>
+                                <option value="84">T</option>
+                                <option value="85">U</option>
+                                <option value="86">V</option>
+                                <option value="87">W</option>
+                                <option value="88">X</option>
+                                <option value="89">Y</option>
+                                <option value="90">Z</option>
+                            </select>
+						</span>
+					</span>
+
+<div class="clr"></div>
+					<span>
+						<label><span i18n-content="popupBtnEntire">Entire page</span> :</label>
+						<span>Ctrl+Shift+
+							<select id="entire">
+                                <option value="64" hidden="hidden">@</option>
+                                <option value="48">0</option>
+                                <option value="49">1</option>
+                                <option value="50">2</option>
+                                <option value="51">3</option>
+                                <option value="52">4</option>
+                                <option value="53">5</option>
+                                <option value="54">6</option>
+                                <option value="55">7</option>
+                                <option value="56">8</option>
+                                <option value="57">9</option>
+                                <option value="65">A</option>
+                                <option value="66">B</option>
+                                <option value="67">C</option>
+                                <option value="68">D</option>
+                                <option value="69">E</option>
+                                <option value="70">F</option>
+                                <option value="71">G</option>
+                                <option value="72">H</option>
+                                <option value="73">I</option>
+                                <option value="74">J</option>
+                                <option value="75">K</option>
+                                <option value="76">L</option>
+                                <option value="77">M</option>
+                                <option value="78">N</option>
+                                <option value="79">O</option>
+                                <option value="80">P</option>
+                                <option value="81">Q</option>
+                                <option value="82">R</option>
+                                <option value="83">S</option>
+                                <option value="84">T</option>
+                                <option value="85">U</option>
+                                <option value="86">V</option>
+                                <option value="87">W</option>
+                                <option value="88">X</option>
+                                <option value="89">Y</option>
+                                <option value="90">Z</option>
+                            </select>
+						</span>
+					</span>
+
+<div class="clr"></div>
+					<span id="window-capture">
+						<label><span i18n-content="popupBtnWindow">Browser window</span> :</label>
+						<span>Ctrl+Shift+
+							<select id="window">
+                                <option value="64" hidden="hidden">@</option>
+                                <option value="48">0</option>
+                                <option value="49">1</option>
+                                <option value="50">2</option>
+                                <option value="51">3</option>
+                                <option value="52">4</option>
+                                <option value="53">5</option>
+                                <option value="54">6</option>
+                                <option value="55">7</option>
+                                <option value="56">8</option>
+                                <option value="57">9</option>
+                                <option value="65">A</option>
+                                <option value="66">B</option>
+                                <option value="67">C</option>
+                                <option value="68">D</option>
+                                <option value="69">E</option>
+                                <option value="70">F</option>
+                                <option value="71">G</option>
+                                <option value="72">H</option>
+                                <option value="73">I</option>
+                                <option value="74">J</option>
+                                <option value="75">K</option>
+                                <option value="76">L</option>
+                                <option value="77">M</option>
+                                <option value="78">N</option>
+                                <option value="79">O</option>
+                                <option value="80">P</option>
+                                <option value="81">Q</option>
+                                <option value="82">R</option>
+                                <option value="83">S</option>
+                                <option value="84">T</option>
+                                <option value="85">U</option>
+                                <option value="86">V</option>
+                                <option value="87">W</option>
+                                <option value="88">X</option>
+                                <option value="89">Y</option>
+                                <option value="90">Z</option>
+                            </select>
+						</span>
+					</span>
+</div>
+<div class="clr"></div>
+</div>
+<!--#shortcut-setting-->
+<!--<button id="save_settings" class="save_settings"><i class="icon"></i>Save</button>-->
+<div id="info">
+    <b i18n-content="appName">Nimbus Screen Capture</b>
+    <span i18n-content="optionsFrom">from</span>
+    <a href="http://nimbus.everhelper.me" target="_blank">Everhelper</a>
+</div>
+</div>
+<!--.container -->
+</div>
+<!--#wrapper -->
+
+
+<script src="js/i18n_template.js"></script>
+</body>
+</html>

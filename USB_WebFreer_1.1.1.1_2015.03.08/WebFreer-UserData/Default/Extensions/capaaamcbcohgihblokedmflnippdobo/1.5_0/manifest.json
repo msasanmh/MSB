@@ -1,0 +1,41 @@
+{
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDOuztspVpgw/7mAO9mPi2yeQ+bcp0cuksVZ1lmHYDGtA/vvFkvuOpxaykmzUM9wEOC47JK2D6/61CCJr47MzNGef4OZdkMPQVYcg5RcHHHZdVCMFe9se6y/0f7tEq4KFBLzjwWCHbhFJ2ulkpPYPhACCqMv4tzuChtieupkthMlwIDAQAB",
+   "name": "Aero Black",
+   "theme": {
+      "colors": {
+         "bookmark_text": [ 170, 170, 170 ],
+         "control_background": [ 59, 59, 59 ],
+         "frame": [ 0, 0, 0 ],
+         "frame_inactive": [ 135, 135, 135 ],
+         "ntp_background": [ 50, 55, 60 ],
+         "ntp_link": [ 255, 255, 255 ],
+         "ntp_section": [ 96, 96, 96, 0.4 ],
+         "ntp_section_link": [ 255, 255, 255 ],
+         "ntp_section_text": [ 255, 255, 255 ],
+         "ntp_text": [ 255, 255, 255 ],
+         "tab_background_text": [ 0, 0, 0 ],
+         "tab_text": [ 250, 250, 250 ],
+         "toolbar": [ 0, 0, 0 ]
+      },
+      "images": {
+         "theme_button_background": "images/theme_button_background.png",
+         "theme_frame": "images/Data_18.png",
+         "theme_ntp_attribution": "images/stamga.png",
+         "theme_ntp_background": "images/theme_ntp_background.png",
+         "theme_tab_background": "images/theme_tab_background.png",
+         "theme_tab_background_incognito": "images/theme_tab_background.png",
+         "theme_tab_background_v": "images/theme_tab_background.png",
+         "theme_toolbar": "images/theme_toolbar.png",
+         "theme_window_control_background": "images/theme_window_control_background.png"
+      },
+      "properties": {
+         "ntp_background_alignment": "left top",
+         "ntp_background_repeat": "repeat-x",
+         "ntp_logo_alternate": 1
+      },
+      "tints": {
+         "buttons": [ 1, 1, 1 ]
+      }
+   },
+   "version": "1.5"
+}

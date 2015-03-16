@@ -1,0 +1,34 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "default_locale": "en",
+   "description": "Download files with Internet Download Manager",
+   "homepage_url": "http://www.internetdownloadmanager.com/",
+   "icons": {
+      "128": "images/logoBig.png",
+      "16": "images/dwnlLink.png",
+      "48": "images/logoSmall.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDD9zXmIZR2Hmu2+6HVf2dDbT66CM3slkAEgCvYy6NEo0fqJeJodR2QeTS4tgXXtckF3HB0/kJs+cX3R4Yk662e1NceVstNlTkS+cADbVuTsAUaDYixoF7W5NWNQiZaPv9O9I2P7JWN8dPtvq8TPmHq5kJ+vacFJnbBn0q0SzsapwIDAQAB",
+   "manifest_version": 2,
+   "minimum_Web Freer_version": "1.1.1.0",
+   "name": "IDM Integration Module\r\n(Compatible with WebFreer by MSasanMH)",
+   "offline_enabled": false,
+   "permissions": [ "\u003Call_urls\u003E", "tabs", "cookies", "contextMenus", "webNavigation", "webRequest", "webRequestBlocking", "management", "storage" ],
+   "plugins": [ {
+      "path": "IDMGCExt.dll",
+      "public": true
+   }, {
+      "path": "IDMGCExt64.dll",
+      "public": true
+   } ],
+   "requirements": {
+      "plugins": {
+         "npapi": false
+      }
+   },
+   "update_url": "http://www.internetdownloadmanager.com/",
+   "version": "6.21.14",
+   "web_accessible_resources": [ "captured.html" ]
+}

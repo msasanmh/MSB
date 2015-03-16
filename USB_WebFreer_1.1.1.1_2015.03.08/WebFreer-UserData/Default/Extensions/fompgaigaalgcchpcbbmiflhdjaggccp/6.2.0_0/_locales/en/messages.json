@@ -1,0 +1,388 @@
+{
+   "appDesc": {
+      "description": "The description of the extension",
+      "message": "Capture Web page, a part of it or the whole browser window, edit screenshots and save the images to Local File or Google Drive."
+   },
+   "appName": {
+      "description": "The title of the extension",
+      "message": "Nimbus Screenshot"
+   },
+   "cropBtnCancel": {
+      "message": "Cancel"
+   },
+   "cropBtnCopy": {
+      "message": "Copy to clipboard"
+   },
+   "cropBtnEdit": {
+      "message": "Edit"
+   },
+   "cropBtnNimbus": {
+      "message": "Send to Nimbus"
+   },
+   "cropBtnSave": {
+      "message": "Save"
+   },
+   "doneTitle": {
+      "message": "Save screenshot"
+   },
+   "editBtnBack": {
+      "message": "Back"
+   },
+   "editBtnCopy": {
+      "message": "Copy to Clipboard"
+   },
+   "editBtnDone": {
+      "message": "Done"
+   },
+   "editBtnDrive": {
+      "message": "Send to Google"
+   },
+   "editBtnNimbus": {
+      "message": "Save to Nimbus"
+   },
+   "editBtnPrint": {
+      "message": "Print Image"
+   },
+   "editBtnSave": {
+      "message": "Save as Image"
+   },
+   "foldersLabel": {
+      "message": "You will save your screenshot to:"
+   },
+   "gDriveBtnDone": {
+      "message": "Done"
+   },
+   "gDriveLabel": {
+      "message": "Please, select folder you want to save screenshot"
+   },
+   "gDriveMainFolder": {
+      "message": "This is Main Folder"
+   },
+   "gDriveNoItems": {
+      "message": "No items"
+   },
+   "gDriveSelectFolder": {
+      "message": "select folder"
+   },
+   "gDriveTitle": {
+      "message": "Send to Google Drive"
+   },
+   "limitDescription": {
+      "message": "\u003Cstrong\u003EYou can switch to Nimbus Pro\u003C/strong\u003E to increase the monthly traffic limit to 1 gigabyte."
+   },
+   "limitGoToPro": {
+      "message": "Go to Nimbus Pro"
+   },
+   "limitHref": {
+      "message": "Why is Nimbus Pro better?"
+   },
+   "limitNoSpace": {
+      "message": "Unfortunately, you will not be able to upload the file, as \u003Cstrong\u003Eyour monthly traffic limit of 100 megabytes is about to be reached\u003C/strong\u003E."
+   },
+   "limitOf": {
+      "message": "of"
+   },
+   "limitUsage": {
+      "message": "Usage:"
+   },
+   "nimbusBtnComment": {
+      "message": "comment and upload"
+   },
+   "nimbusBtnLogin": {
+      "message": "Login"
+   },
+   "nimbusBtnMyUploads": {
+      "message": "My uploads"
+   },
+   "nimbusBtnRemind": {
+      "message": "Remind"
+   },
+   "nimbusBtnSignup": {
+      "message": "Signup"
+   },
+   "nimbusBtnStart": {
+      "message": "Start upload"
+   },
+   "nimbusCommentPlaceholder": {
+      "message": "comment your screenshot"
+   },
+   "nimbusHeaderLogin": {
+      "message": "Login"
+   },
+   "nimbusHeaderRegistration": {
+      "message": "Registration"
+   },
+   "nimbusHeaderRemindPass": {
+      "message": "Remind password"
+   },
+   "nimbusInfo": {
+      "message": "With Nimbus account you can comment your screenshots and share them with your friends and colleagues."
+   },
+   "nimbusLabelComment": {
+      "message": "Comment"
+   },
+   "nimbusLabelEmail": {
+      "message": "Email"
+   },
+   "nimbusLabelFolder": {
+      "message": "Folder"
+   },
+   "nimbusLabelForgotPass": {
+      "message": "Forgot your password? "
+   },
+   "nimbusLabelLogin": {
+      "message": "Login"
+   },
+   "nimbusLabelPassword": {
+      "message": "Password"
+   },
+   "nimbusLabelPrivate": {
+      "message": "private"
+   },
+   "nimbusLabelRetypePass": {
+      "message": "Retype password"
+   },
+   "nimbusLabelUsername": {
+      "message": "Username"
+   },
+   "nimbusTitle": {
+      "message": "Send to Nimbus Note"
+   },
+   "nimbusViewUploads": {
+      "message": "View my Nimbus uploads"
+   },
+   "notificationCopy": {
+      "message": "Image has been copied to the clipboard."
+   },
+   "notificationDataIncorrect": {
+      "message": "Data entered incorrect. Please try again."
+   },
+   "notificationEmailFail": {
+      "message": "This email is already registered."
+   },
+   "notificationEmailIncorrect": {
+      "message": "Incorrect email. Please try again."
+   },
+   "notificationInsertInfo": {
+      "message": "You can insert only image."
+   },
+   "notificationKeyIncorrect": {
+      "message": "Key entered incorrect. Please try again."
+   },
+   "notificationLoginFail": {
+      "message": "Login fail. Please try again."
+   },
+   "notificationPassChanged": {
+      "message": "Password has changed."
+   },
+   "notificationReachedLimit": {
+      "message": "You have reached your monthly traffic limit (100 MB). To continue, you have to purchase Nimbus Pro."
+   },
+   "notificationRegisterFail": {
+      "message": "Register fail. Please try again."
+   },
+   "notificationRestoreSent": {
+      "message": "Restore instructions have been sent to your E-mail."
+   },
+   "notificationUploaded": {
+      "message": "Upload has completed."
+   },
+   "notificationUrlCopied": {
+      "message": "URL has been copied to the clipboard."
+   },
+   "notificationWrong": {
+      "message": "Something wrong. Please try again."
+   },
+   "notificationWrongEditor": {
+      "message": "We're sorry, but the editor perhaps will work wrong with very large images."
+   },
+   "notificationWrongInsert": {
+      "message": "Clipboard does not contain pictures to insert."
+   },
+   "optionsCanUse": {
+      "message": "You can use"
+   },
+   "optionsEditor": {
+      "message": "Editor Settings"
+   },
+   "optionsFormat": {
+      "message": "Image format"
+   },
+   "optionsFrom": {
+      "message": "from"
+   },
+   "optionsHideFixedElements": {
+      "message": "Hide fixed elements"
+   },
+   "optionsNameTpl": {
+      "message": "Filename Template:"
+   },
+   "optionsNumbers": {
+      "message": "Display Numbers near objects"
+   },
+   "optionsQuality": {
+      "message": "Image quality"
+   },
+   "optionsQuickCaptureEnable": {
+      "message": "Enable quick capture (do not show popup)"
+   },
+   "optionsQuickCaptureTitle": {
+      "message": "Capture settings"
+   },
+   "optionsSave": {
+      "message": "Save Settings"
+   },
+   "optionsSaveAs": {
+      "message": "Enable \"Save As\" dialog"
+   },
+   "optionsSaveCropPosition": {
+      "message": "Save crop position"
+   },
+   "optionsShadows": {
+      "message": "Enable shadows"
+   },
+   "optionsShortcut": {
+      "message": "Shortcut Settings"
+   },
+   "optionsTitle": {
+      "message": "Screenshot Settings"
+   },
+   "panelActions": {
+      "message": "Actions"
+   },
+   "panelParameters": {
+      "message": "Parameters"
+   },
+   "panelSize": {
+      "message": "Size"
+   },
+   "panelTools": {
+      "message": "Drawing tools"
+   },
+   "popupBtnAndroid": {
+      "message": "Android Version"
+   },
+   "popupBtnArea": {
+      "message": "Selected area"
+   },
+   "popupBtnBlank": {
+      "message": "Blank Screen"
+   },
+   "popupBtnEnableCopy": {
+      "message": "copy to clipboard"
+   },
+   "popupBtnEnableDownload": {
+      "message": "download"
+   },
+   "popupBtnEnableEdit": {
+      "message": "enable edit"
+   },
+   "popupBtnEnableSave": {
+      "message": "save as"
+   },
+   "popupBtnEntire": {
+      "message": "Entire page"
+   },
+   "popupBtnOptions": {
+      "message": "Options"
+   },
+   "popupBtnScroll": {
+      "message": "Selected & Scroll"
+   },
+   "popupBtnVisible": {
+      "message": "Visible part of page"
+   },
+   "popupBtnWindow": {
+      "message": "Browser window"
+   },
+   "popupTitle": {
+      "message": "Capture options"
+   },
+   "tooltipArrow": {
+      "message": "draw arrow"
+   },
+   "tooltipBlur": {
+      "message": "blur"
+   },
+   "tooltipColor": {
+      "message": "change color"
+   },
+   "tooltipCopy": {
+      "message": "Copy to Clipboard"
+   },
+   "tooltipCrop": {
+      "message": "crop"
+   },
+   "tooltipEllipse": {
+      "message": "draw ellipse"
+   },
+   "tooltipFill": {
+      "message": "fill"
+   },
+   "tooltipLine": {
+      "message": "draw line"
+   },
+   "tooltipLineWidth": {
+      "message": "change line width"
+   },
+   "tooltipLogout": {
+      "message": "logout"
+   },
+   "tooltipNotAuthorized": {
+      "message": "You are not authorized"
+   },
+   "tooltipNote": {
+      "message": "draw note"
+   },
+   "tooltipNumbers": {
+      "message": "show numbers"
+   },
+   "tooltipPassInfo": {
+      "message": "Password must be at least 8 symbols"
+   },
+   "tooltipPassMatch": {
+      "message": "Passwords do not match"
+   },
+   "tooltipPen": {
+      "message": "pen"
+   },
+   "tooltipRectangle": {
+      "message": "draw rectangle"
+   },
+   "tooltipRedo": {
+      "message": "redo"
+   },
+   "tooltipResize": {
+      "message": "resize"
+   },
+   "tooltipShadow": {
+      "message": "shadow"
+   },
+   "tooltipShortUrl": {
+      "message": "Make short URL"
+   },
+   "tooltipText": {
+      "message": "draw text"
+   },
+   "tooltipUndo": {
+      "message": "undo"
+   },
+   "tooltipUndoAll": {
+      "message": "undo all"
+   },
+   "tooltipUploadTo": {
+      "message": "Upload to"
+   },
+   "tooltipWrongEmail": {
+      "message": "Wrong email"
+   },
+   "tooltipZoom": {
+      "message": "change zoom"
+   },
+   "tooltipZoomMinus": {
+      "message": "zoom -"
+   },
+   "tooltipZoomPlus": {
+      "message": "zoom +"
+   }
+}

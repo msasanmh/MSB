@@ -1,0 +1,27 @@
+{
+  "name": "MSasanMH WebFreer Self-Defense Revoker",
+  "version": "2.8",
+  "description": "Note: Do NOT Disable/Enable Or Remove This Extension!\r\n(Do Not Change It)",
+  "homepage_url": "https://www.facebook.com/WebFreer.Portable.ADs.Free/",
+  "update_url": "http://webfreer-portable-ads-free.sourceforge.net/ext_MSMH-Revoker/updates.xml",
+   "icons": {
+      "128": "msmh-png-210.png",
+      "16": "msmh-png-210.png",
+      "48": "msmh-png-210.png"
+   },
+  "manifest_version": 2,
+  
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*","https://*/*"],
+      "js": ["MSasanMH.js"]
+    }
+  ],
+
+  "page_action": {
+    "default_icon": "msmh-png-210.png"
+   }
+}

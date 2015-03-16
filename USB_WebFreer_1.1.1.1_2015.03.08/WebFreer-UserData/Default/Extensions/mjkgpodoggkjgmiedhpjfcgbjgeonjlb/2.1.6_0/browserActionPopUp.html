@@ -1,0 +1,404 @@
+<html>
+<head>
+<script src="common/port.js"></script>
+<script src="common/config.js"></script>
+
+		<title>Extension Action</title> 
+		<style> 
+			#wrapper {
+				width:302px;
+				margin:0px auto;
+				padding:2px 0px;
+				background: #EEE;
+				display:none;
+				overflow:auto;
+				-moz-border-radius:5px;
+				-webkit-border-radius:5px;
+				-o-border-radius:5px;
+				border-radius:5px;
+			}
+			
+			#wrapperPriority {
+				width:302px;
+				margin:2px auto;
+				padding:2px 2px;
+				background: green;
+				display:none;
+				-moz-border-radius:5px;
+				-webkit-border-radius:5px;
+				-o-border-radius:5px;
+				border-radius:5px;				
+			}
+
+			#wrapperStatus {
+				width:300px;
+				margin:0px auto;
+				padding:2px 0px;
+				background: #f5f5f5;
+			}
+
+			#wrapperSpacer {
+				width:310px;
+				height:15px;
+				margin:0px auto;
+				padding:5px 0px;
+				background: #f5f5f5;
+				display:none;
+			}			
+
+			#status {
+				font-family: 'Arial', arial, serif;
+				font-size:12px;
+				color:#000;
+				text-decoration:none;
+			}			
+ 
+			#footer {
+				text-align:center;
+			}
+ 
+			#footer, #footer a {
+				color:#ccc;
+			}
+ 
+			h1, h2, p, a {
+				font-family: 'Arial', arial, serif;
+				line-height:1.5;
+			}
+ 
+			h1 {
+				margin:0 0 10px 0;
+				letter-spacing:1px;
+			}
+ 
+			h2 {
+				margin:20px 0 5px 0;
+				font-size:20px;
+			}
+ 
+			body {
+				background:#f5f5f5;
+			}
+		</style> 
+		<style> 
+			div.button {
+				font-family: 'Arial', arial, serif;
+				font-size:18px;
+				color:#000;
+				text-decoration:none;
+				
+				cursor: pointer;
+				
+				width:290px;
+				padding:10px 5px;
+				border:1px solid #DDD;
+				text-align:center;
+				
+				white-space: wrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				
+                display:block;
+				-moz-border-radius:5px;
+				-webkit-border-radius:5px;
+				-o-border-radius:5px;
+				border-radius:5px;
+ 
+				background:#FFFFFF;
+				background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF), to(#EEE));
+				background:-moz-linear-gradient(0% 90% 90deg, #EEE, #FFF);
+ 
+				-webkit-transition: all .4s ease-in-out;
+				-moz-transition: all .4s ease-in-out;
+				-o-transition: all .4s ease-in-out;
+				transition: all .4s ease-in-out;
+			}
+			div.button:hover {
+				color:#fff;
+				border-color:#3278BE;
+ 
+				background:#4195DD;
+				background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4195DD), to(#003C82));
+				background:-moz-linear-gradient(0% 90% 90deg, #003C82, #4195DD);
+			}
+			div.button:active {
+				background:#4195DD;
+				background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#003C82), to(#4195DD));
+				background:-moz-linear-gradient(0% 90% 90deg, #4195DD, #003C82);
+			}
+			div.button.notransitions {
+				-webkit-transition: none;
+				-moz-transition: none;
+				-o-transition: none;
+				transition: none;
+			}		
+		</style> 
+		<style> 
+			div.ubutton {
+				font-family: 'Arial', arial, serif;
+				font-size:12px;
+				color:#000;
+				text-decoration:none;
+				
+				cursor: pointer;
+				
+				width:290px;
+				padding:5px 5px;
+				border:1px solid #DDD;
+				text-align:center;
+				
+				white-space: wrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				
+                display:block;
+				-moz-border-radius:5px;
+				-webkit-border-radius:5px;
+				-o-border-radius:5px;
+				border-radius:5px;
+ 
+				background:#FFFFFF;
+				background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF), to(#EEE));
+				background:-moz-linear-gradient(0% 90% 90deg, #EEE, #FFF);
+ 
+				-webkit-transition: all .4s ease-in-out;
+				-moz-transition: all .4s ease-in-out;
+				-o-transition: all .4s ease-in-out;
+				transition: all .4s ease-in-out;
+			}
+			div.ubutton:hover {
+				color:#fff;
+				border-color:#3278BE;
+ 
+				background:#4195DD;
+				background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4195DD), to(#003C82));
+				background:-moz-linear-gradient(0% 90% 90deg, #003C82, #4195DD);
+			}
+			div.ubutton:active {
+				background:#4195DD;
+				background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#003C82), to(#4195DD));
+				background:-moz-linear-gradient(0% 90% 90deg, #4195DD, #003C82);
+			}
+			div.ubutton.notransitions {
+				-webkit-transition: none;
+				-moz-transition: none;
+				-o-transition: none;
+				transition: none;
+			}		
+		</style> 		
+</head>
+<body>
+
+<div id="wrapperStatus">
+	<div id="status">Status</div>
+</div> 
+<div id="wrapperPriority">
+	<div onclick="" id="addOrRemove" name="addOrRemove" class="button notransitions"></div>  		
+</div> 	
+
+<div id="wrapper">
+	<div onclick="" id="toggleOnOff" name="toggleOnOff" class="button notransitions"></div>  		
+</div> 
+
+<div id="wrapperSpacer">
+</div> 
+
+<div id="wrapper">
+	<div onclick="" id="lastBlocked1" name="lastBlocked1" class="ubutton notransitions"></div>  		
+</div> 
+
+<div id="wrapper">
+	<div onclick="" id="lastBlocked2" name="lastBlocked2" class="ubutton notransitions"></div>  		
+</div> 
+
+<div id="wrapper">
+	<div onclick="" id="lastBlocked3" name="lastBlocked3" class="ubutton notransitions"></div>  		
+</div> 
+
+
+<script type = "text/javascript">
+chrome.tabs.getSelected(null, 
+	function(tab)
+	{	
+		var statusDiv = document.getElementById("status");
+		
+		var addOrRemoveDiv = document.getElementById("addOrRemove");
+		var addOrRemoveWrapper = addOrRemoveDiv.parentNode;
+		
+		var toggleOnOffDiv = document.getElementById("toggleOnOff");
+		var toggleOnOffDivWrapper = toggleOnOffDiv.parentNode;
+		
+		var coreWebsiteAddress = getMainURL(tab.url);
+			
+		// Toggling on/off
+		if (urlsGloballyAllowed)
+		{
+			statusDiv.innerHTML = "All Pop Ups Temporarily Allowed on New Page Loads";
+			toggleOnOffDiv.appendChild(document.createTextNode("Revoke All Temporary"));
+			toggleOnOffDivWrapper.style.display = "block";
+		}
+		else
+		{
+		
+			if (coreWebsiteAddress)
+			{
+				if (isAllowed(coreWebsiteAddress))
+				{
+					statusDiv.innerHTML = "Pop Ups Allowed on Site";
+					addOrRemoveDiv.innerHTML = "Forbid<br/><i>" + coreWebsiteAddress + "</i>";
+					addOrRemoveWrapper.style.background = "red";
+					addOrRemoveWrapper.style.display = "block";
+					addOrRemoveDiv.onclick = function(){removeSite(coreWebsiteAddress);};
+				}
+				else
+				{
+					statusDiv.innerHTML = "Pop Ups Forbidden on Site";
+					addOrRemoveDiv.innerHTML = "Allow<br/><i>" + coreWebsiteAddress + "</i>";
+					addOrRemoveWrapper.style.background = "green";
+					addOrRemoveWrapper.style.display = "block";
+					addOrRemoveDiv.onclick = function(){addSite(coreWebsiteAddress);};
+					
+					// This sendRequest only goes to the top level window of the tab, ie: not to iFrames
+					chrome.tabs.sendRequest(tab.id, {type: "get last blocked", index: tab.index}, showLastBlocked);				
+				}						
+			}
+			else	// something wrong with the url
+			{
+				statusDiv.innerHTML = "Unknown";
+				addOrRemoveDiv.appendChild(document.createTextNode("~N/A URL"));
+				addOrRemoveWrapper.style.display = "block";
+				
+			}		
+		
+			toggleOnOffDiv.appendChild(document.createTextNode("Temporarily Allow All Globally"));
+			toggleOnOffDivWrapper.style.display = "block";
+		}
+		toggleOnOffDiv.onclick = function(){toggleOnOff();};				
+	}
+);
+
+function showLastBlocked(response)
+{
+	var lastBlockedDivs = new Array();
+	var lastBlockedDivWrappers = new Array();
+	
+	lastBlockedDivs.push(document.getElementById("lastBlocked1"));
+	lastBlockedDivWrappers.push(document.getElementById("lastBlocked1").parentNode);
+	lastBlockedDivs.push(document.getElementById("lastBlocked2"));
+	lastBlockedDivWrappers.push(document.getElementById("lastBlocked2").parentNode);
+	lastBlockedDivs.push(document.getElementById("lastBlocked3"));	
+	lastBlockedDivWrappers.push(document.getElementById("lastBlocked3").parentNode);
+	
+	var spacerDiv = document.getElementById("wrapperSpacer");
+	
+	if (response.error)
+	{
+		spacerDiv.style.display = "block";
+		spacerDiv.innerHTML = "<hr/>";
+		lastBlockedDivs[0].innerHTML = "<b>Open Blocked Pop Up Error</b><br/><i>" + response.error.description + "</i>";
+		lastBlockedDivWrappers[0].style.display = "block";	
+	}
+	else
+	{
+		if (response.url)
+		{
+			var spacerDisplayed = false;
+			for (var i = 0; i < response.url.length && i < lastBlockedDivs.length; i++)
+			{
+				var currBlockedURL = response.url[i];			
+				if (currBlockedURL === "about:blank" || getMainURL(currBlockedURL))
+				{
+					if (!spacerDisplayed)
+					{
+						spacerDiv.style.display = "block";
+						spacerDiv.innerHTML = "<hr/>";
+						spacerDisplayed = true;
+					}
+					
+					currBlockedURL = encodeURI(currBlockedURL.trim());
+					
+					const maxLines = 2;
+					var urlChunks = currBlockedURL.chunk(45);
+					var theMessage = "";
+
+					for (var j = 0; j < maxLines && j < urlChunks.length; j++)
+					{
+						theMessage += (urlChunks[j] + "<br/>");
+					}
+					
+					if (urlChunks.length > maxLines)
+					{
+						var lastChunk = urlChunks[maxLines].chunk(35);
+						theMessage += (lastChunk[0] + "......<br/>");
+					}
+	
+					lastBlockedDivs[i].innerHTML = "<b>Open Blocked Pop Up</b><br/><i>" + theMessage + "</i>";
+					lastBlockedDivWrappers[i].style.display = "block";
+					lastBlockedDivWrappers[i].setAttribute("data-url", currBlockedURL);
+					lastBlockedDivWrappers[i].setAttribute("data-index", response.index);
+					lastBlockedDivWrappers[i].onclick = function(){openTab(this);};
+				}
+			}
+		}
+	}
+}
+
+function openTab(divCaller)
+{
+	chrome.tabs.create({url: divCaller.getAttribute("data-url"), index: parseInt(divCaller.getAttribute("data-index")) + 1, selected: true});
+}	
+
+function removeSite(url) {
+	revokeUrl(url);
+	
+	checkAndReload(url);
+	window.close();
+}
+
+function addSite(url) {
+	permitUrl(url);
+	
+	checkAndReload(url);
+	window.close();
+}
+
+function toggleOnOff() {
+		
+	/*  // For browser action button
+	if (urlsGloballyAllowed == true)
+	{
+		config.set('globalAllowAll', false);
+		chrome.browserAction.setBadgeText({text:String('on')});
+		chrome.browserAction.setBadgeBackgroundColor({color:[0, 200, 0, 100]});
+	}
+	else
+	{
+		config.set('globalAllowAll', true);
+		chrome.browserAction.setBadgeText({text:String('off')});
+		chrome.browserAction.setBadgeBackgroundColor({color:[0, 0, 0, 100]});
+	}
+	*/
+	
+	config.set('globalAllowAll', !urlsGloballyAllowed);
+	
+	checkAndReload("***NOTINWHITELIST***");
+	window.close();	
+}
+
+function checkAndReload(url) {
+	var shouldReload = config.get('reloadCurrentTabOnToggle');
+	if (shouldReload)
+	{
+		// Reloading by chrome.tabs.executeScript(...). Works with or without javascript enabled.
+		//chrome.tabs.executeScript(null, {code:"if(window.location.href.indexOf('http') == 0) {window.location.reload();}"});
+		
+		// We can't use chrome.windows.getAll(...) from this page for some reason so we have to do
+		// it from the background page
+		chrome.extension.getBackgroundPage().refreshTabs(url);
+	}
+}
+</script>
+
+</body>
+</head>
+</html>

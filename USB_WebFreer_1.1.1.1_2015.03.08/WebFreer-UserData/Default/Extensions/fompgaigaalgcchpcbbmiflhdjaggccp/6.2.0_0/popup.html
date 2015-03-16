@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+    <title>Nimbus ScreenShot</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection"/>
+    <style type="text/css">
+        body {
+            padding: 0 10px 5px;
+        }
+    </style>
+</head>
+<script src="js/jquery.js"></script>
+<script src="js/popup.js"></script>
+
+<body>
+<h3>CAPTURE OPTIONS</h3>
+<button class="main_btn" id="visible" tabindex="-1"><i class="visible"></i><span>Visible part of page</span></button>
+<button class="main_btn" id="area" tabindex="-1"><i class="selected"></i><span>Selected area</span></button>
+<button class="main_btn" id="scroll" tabindex="-1"><i class="scroll"></i><span>Selected & Scroll</span></button>
+<button class="main_btn" id="entire" tabindex="-1"><i class="entire"></i><span>Entire page</span></button>
+<button class="main_btn" id="window" tabindex="-1"><i class="browser"></i><span>Browser window</span></button>
+<button class="main_btn" id="blank" tabindex="-1"><i class="blank"></i><span>Blank Screen</span></button>
+<button class="main_btn" id="android" tabindex="-1"><i class="android"></i><span>Android Version</span></button>
+<span class="enable_edit settings_btn">
+    <!--<input id="enableEdit" name="enable-edit" type="checkbox" value="edit">-->
+    <!--<label for="enableEdit" >enable edit</label>-->
+    <select name="save" id="enableEdit">
+        <option value="edit" selected>enable edit</option>
+        <option value="done">save as</option>
+        <option value="save">download</option>
+        <option value="copy">copy to clipboard</option>
+    </select>
+</span>
+<button class="settings_btn" id="options" tabindex="-1"><i class="options"></i><span>Options</span></button>
+<div class="clr"></div>
+</body>
+</html>

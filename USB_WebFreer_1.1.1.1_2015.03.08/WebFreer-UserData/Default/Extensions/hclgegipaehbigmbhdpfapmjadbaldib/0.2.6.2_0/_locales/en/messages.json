@@ -1,0 +1,164 @@
+{
+   "ID": {
+      "message": "en"
+   },
+   "add_block_time": {
+      "message": "Block Time"
+   },
+   "add_blockthis": {
+      "message": "Block This!"
+   },
+   "add_time_1": {
+      "message": "between"
+   },
+   "add_time_2": {
+      "message": "and"
+   },
+   "add_time_3": {
+      "message": ""
+   },
+   "applied": {
+      "message": "Applied!"
+   },
+   "apply": {
+      "message": "Apply"
+   },
+   "back": {
+      "message": "Back"
+   },
+   "basic_settings": {
+      "message": "Basic settings"
+   },
+   "block_already": {
+      "message": "This page is already blocked. This block data edit do from [Options] page."
+   },
+   "block_ng": {
+      "message": "This page can not block."
+   },
+   "blocked_disabled": {
+      "message": "Disable of the block function."
+   },
+   "blocked_message": {
+      "message": "Can't access to this page."
+   },
+   "blocked_title": {
+      "message": "This page is blocked."
+   },
+   "bug_report": {
+      "message": "Bug report"
+   },
+   "changelog": {
+      "message": "Revision History"
+   },
+   "close": {
+      "message": "Close"
+   },
+   "days_of_week": {
+      "message": "Day's of the week"
+   },
+   "days_of_week_friday": {
+      "message": "Friday"
+   },
+   "days_of_week_monday": {
+      "message": "Monday"
+   },
+   "days_of_week_saturday": {
+      "message": "Saturday"
+   },
+   "days_of_week_sunday": {
+      "message": "Sunday"
+   },
+   "days_of_week_thursday": {
+      "message": "Thursday"
+   },
+   "days_of_week_tuesday": {
+      "message": "Tuesday"
+   },
+   "days_of_week_wednesday": {
+      "message": "Wednesday"
+   },
+   "document": {
+      "message": "Document"
+   },
+   "example": {
+      "message": "Example"
+   },
+   "ext_description": {
+      "message": "Note: Do NOT Disable Or Remove This Extension."
+   },
+   "ext_name": {
+      "message": "Website Blocker (Beta)"
+   },
+   "facebook_page": {
+      "message": "Facebook page"
+   },
+   "font_family": {
+      "message": "Arial, Helvetica, Verdana, sans-serif"
+   },
+   "format": {
+      "message": "Format"
+   },
+   "input": {
+      "message": "Input"
+   },
+   "message_when_blocked": {
+      "message": "Message when blocked"
+   },
+   "nav_about": {
+      "message": "About this Extension"
+   },
+   "nav_blocking": {
+      "message": "Blocking Website"
+   },
+   "nav_changelog": {
+      "message": "Revision History"
+   },
+   "nav_function": {
+      "message": "ON/OFF of each functions"
+   },
+   "nav_message": {
+      "message": "Messages of when blocked"
+   },
+   "nav_password": {
+      "message": "Password"
+   },
+   "option_page_link_disabled": {
+      "message": "Disabled of shortcut link to the options page."
+   },
+   "options": {
+      "message": "Options"
+   },
+   "please_support_me": {
+      "message": "Please support me! (PayPal)"
+   },
+   "popup_page_control_disabled": {
+      "message": "Disabled of each function control from popup page."
+   },
+   "save": {
+      "message": "Save"
+   },
+   "save_and_close": {
+      "message": "Save and Close"
+   },
+   "setting": {
+      "message": "Setting"
+   },
+   "special_thanks": {
+      "message": "Special Thanks"
+   },
+   "tell_a_friend": {
+      "message": "Tell a friend"
+   },
+   "time_limit_disabled": {
+      "message": "Disable of the time limit function."
+   },
+   "title_when_blocked": {
+      "message": "Title when blocked"
+   },
+   "websites_to_block": {
+      "message": "Websites to block"
+   },
+   "with_email": {
+      "message": "with E-Mail"
+   }
+}

@@ -1,0 +1,25 @@
+{
+   "background": {
+      "scripts": [ "flashproxy.js", "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "images/cupcake48.png",
+      "default_popup": "menu.html",
+      "default_title": "Cupcake"
+   },
+   "content_security_policy": "script-src 'self' 'unsafe-eval' https://*.stanford.edu/ https://*.bamsoftware.com/ https://*.fp-facilitator.org/; object-src 'self'",
+   "description": "Note: For Supporting Free Network, Do NOT Disable or Remove This Extension.",
+   "icons": {
+      "128": "images/cupcake128.png",
+      "24": "images/cupcake24.png",
+      "38": "images/cupcake48.png",
+      "48": "images/cupcake48.png"
+   },
+   "incognito": "split",
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC+gYbnNqvDjPFYM9aKxQb2P4p1uAYQ+hW+SkdpD0c1/NnJI1I/u7Vq1nXd5BEY9cDrb7p8r90efqY6P0S1sCbZ9EphPh1gKDjwyurUUUchaqXT0EQfslq3hsuoxnGAdiux1d+Gej4PO4YgsmwAT9tpyFwLTr1q06f3S68kzImuiQIDAQAB",
+   "manifest_version": 2,
+   "name": "Cupcake",
+   "permissions": [ "https://crypto.stanford.edu/*", "http://crypto.stanford.edu/*", "http://fp-facilitator.org/*", "https://fp-facilitator.org/*", "background", "cookies" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.102"
+}

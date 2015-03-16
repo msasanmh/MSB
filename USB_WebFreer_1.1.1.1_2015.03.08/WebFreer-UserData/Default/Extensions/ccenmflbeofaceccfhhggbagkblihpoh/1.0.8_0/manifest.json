@@ -1,0 +1,19 @@
+{
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "RemoveGoogleRedirects.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "It removes Google's URL redirection from all products of Google. It saves your time & ensures your browsing privacy.",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "48": "icon48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDZreklkmL1wydDXvQY31ToB0Mnz8EV2+9rrppDtrJw183HUeZwTqkTjQwmYeXBnTfwiqWKrO5qBTs7qpmj5LPhBU02SAQH6x6W+GbWLdoCMQI2jmCiVVWEIVsfZ14VnEMtophhA1awAUMwvQb2AgpjGFfrn/1O1PHJTT1Q1bBVWQIDAQAB",
+   "manifest_version": 2,
+   "name": "Remove Google Redirects",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.8"
+}

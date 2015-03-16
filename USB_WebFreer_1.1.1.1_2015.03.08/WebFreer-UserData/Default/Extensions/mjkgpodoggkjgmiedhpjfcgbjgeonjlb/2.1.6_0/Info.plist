@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>Eric Wong</string>
+	<key>CFBundleDisplayName</key>
+	<string>Better Pop Up Blocker</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.optimalcycling.safari.betterpopupblocker</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>2.1.6</string>
+	<key>CFBundleVersion</key>
+	<string>2.1.6</string>
+	<key>Chrome</key>
+	<dict>
+		<key>Context Menu Items</key>
+		<array>
+			<dict>
+				<key>Command</key>
+				<string>showOptions</string>
+				<key>Identifier</key>
+				<string>optionsContextMenu</string>
+				<key>Title</key>
+				<string>Options | Better Pop Up Blocker</string>
+			</dict>
+		</array>
+		<key>Database Quota</key>
+		<real>5242880</real>
+		<key>Global Page</key>
+		<string>background.html</string>
+		<key>Toolbar Items</key>
+		<array>
+			<dict>
+				<key>Command</key>
+				<string>browserAction</string>
+				<key>Identifier</key>
+				<string>browserActionButton</string>
+				<key>Image</key>
+				<string>Icon-19.png</string>
+				<key>Label</key>
+				<string>Better Pop Up Blocker</string>
+				<key>Palette Label</key>
+				<string>Better Pop Up Blocker</string>
+				<key>Tool Tip</key>
+				<string>Better Pop Up Blocker</string>
+			</dict>
+		</array>
+	</dict>
+	<key>Content</key>
+	<dict>
+		<key>Scripts</key>
+		<dict>
+			<key>End</key>
+			<array>
+				<string>common/port.js</string>
+				<string>blockIdle.js</string>
+			</array>
+			<key>Start</key>
+			<array>
+				<string>common/port.js</string>
+				<string>blockStart.js</string>
+			</array>
+		</dict>
+	</dict>
+	<key>Description</key>
+	<string>Improves the Apple Safari pop up blocker by blocking pop up windows that it misses.</string>
+	<key>ExtensionInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>Permissions</key>
+	<dict>
+		<key>Website Access</key>
+		<dict>
+			<key>Include Secure Pages</key>
+			<true/>
+			<key>Level</key>
+			<string>All</string>
+		</dict>
+	</dict>
+	<key>Update Manifest URL</key>
+	<string>http://betterpopupblocker.googlecode.com/files/BPUBSafariUpdate.plist</string>
+	<key>Website</key>
+	<string>http://optimalcycling.com/other-projects/better-pop-up-blocker/</string>
+</dict>
+</plist>

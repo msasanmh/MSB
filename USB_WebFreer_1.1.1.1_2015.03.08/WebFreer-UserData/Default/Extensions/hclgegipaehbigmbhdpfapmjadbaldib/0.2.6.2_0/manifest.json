@@ -1,0 +1,27 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "browser_action": {
+      "default_icon": "images/19.png",
+      "default_popup": "popup.html"
+   },
+   "content_security_policy": "script-src 'self' 'unsafe-eval' https://ssl.google-analytics.com https://platform.twitter.com https://apis.google.com https://www.facebook.com https://connect.facebook.net; frame-src https://accounts.google.com https://apis.google.com https://platform.twitter.com https://www.facebook.com https://connect.facebook.net; object-src 'self'",
+   "default_locale": "en",
+   "name": "__MSG_ext_name__",
+   "description": "__MSG_ext_description__",
+   "icons": {
+      "128": "images/128.png",
+      "16": "images/16.png",
+      "19": "images/19.png",
+      "48": "images/48.png",
+      "64": "images/64.png",
+      "72": "images/72.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC9WUm4P7sXV5L6w1cZ+iTj2bIzN4al/L7xwFiL0bpC59mSJLjfNVK20ZYBfvA5kGHT1IyFMg+xfh5W6SCG1cvYmtsDRbE14RaNlrdoM9haw4+ptyp1JAI5o8PUeVJnKskd8Vm/squVQp9DVraYqNR7Z5MV/5Jl3tQKAEU8ad2ntQIDAQAB",
+   "manifest_version": 2,
+   "options_page": "options.html",
+   "permissions": [ "tabs", "*://*/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.2.6.2"
+}

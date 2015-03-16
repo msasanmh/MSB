@@ -1,0 +1,18 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "description": "Install or Download Extensions (.CRX) - Download All Extensions Without (No File) Error!",
+   "icons": {
+      "128": "icon_128.png",
+      "16": "icon_16.png",
+      "32": "icon_32.png",
+      "64": "icon_64.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCtPLgTUZh+jsnOpCH9gikZx5gbwark1qL3OORXchs6lOTbEiqMSrLaw5MyYot/oOetfGa0GNK4QzCCWw37p4oqR3r9sFjYONoAgMbWo1KnLXwVllzpk2gDsWamwEQOsGAEZ4Esx1Jf9ICQL/hdhwLlE2mhOfwiOi+YPQFulccIywIDAQAB",
+   "manifest_version": 2,
+   "name": "MSasanMH CRX Downloader",
+   "permissions": [ "contextMenus", "tabs", "https://chrome.google.com/webstore/detail/*" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "1.3"
+}

@@ -1,0 +1,33 @@
+{
+   "background_page": "background.html",
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "common/port.js", "blockStart.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_start"
+   }, {
+      "all_frames": true,
+      "js": [ "common/port.js", "blockIdle.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "Improves the Google Chrome pop up blocker by blocking pop up windows opened by javascript & other annoyances that it misses.",
+   "icons": {
+      "128": "Icon-128.png",
+      "16": "Icon-16.png",
+      "19": "Icon-19.png",
+      "48": "Icon-48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC+lQcJX8Qz2R7fiV/8O35+k9xaE+0UhOg7l++X0RmdmQYCDAL3csSCCLBuobhXPgG7Jky9raie8djZSnRqMgovL0hZgXJo2nrKmaGgFx6xD48v7skLLnkCrE85txJ8pWnN0ux3M4h5TPCFHNrAEaWlP2EjBlsUvLooj+G6pB1dmQIDAQAB",
+   "minimum_Web Freer_version": "1.1.1.0",
+   "name": "Pop Up Blocker",
+   "options_page": "options.html",
+   "page_action": {
+      "default_icon": "Icon-19.png",
+      "default_popup": "browserActionPopUp.html",
+      "default_title": "Pop Up Blocker"
+   },
+   "permissions": [ "tabs", "http://*/*", "https://*/*" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "2.1.6"
+}

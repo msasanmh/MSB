@@ -1,0 +1,112 @@
+/* 
+    Better Pop Up Blocker
+    Copyright (C) 2010  Eric Wong	
+	contact@optimalcycling.com
+	http://www.optimalcycling.com
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+Better Pop Up Blocker 1.0.0 July 26th, 2010
+First public version.
+
+Better Pop Up Blocker 1.1.0 July 27th, 2010
+Fixed the browser action pop up to accept unicode urls.
+Injected javascript code now removes itself to prevent other code from being able to parse it's variables.
+
+Better Pop Up Blocker 1.1.1 July 27th, 2010
+Added support for blocking the less common window.showModalDialog and window.showModelessDialog methods.
+Reversed the self-removal of javascript in 1.1.0 since there are easier ways to parse the variables.
+
+Better Pop Up Blocker 1.2.0 July 29th, 2010
+Added support for preventing infinite prompt/alert/confirm/print/window pop up attacks in Google Chrome when you allow a site to use these functions.
+The protection is provided as long as the extension is running and a maximum of 30 for each group of prompt/alert/confirm, print, and window pop ups.
+Fixed the use of incorrect regular expressions shown on the Options page. Before, the example regular expressions were not correctly escaped,
+but they still whitelisted the sites you want.
+V1.2 will automatically corrects the default regular expressions from older versions. Please check your own regular expressions if you followed the examples.
+
+Better Pop Up Blocker 1.3.0 August 2nd, 2010
+Much better looking whitelister buttons and uses the url bar icon instead of a browser button.
+Reworked the blocking for document.createEvent so that it doesn't interfere with sites using it in whitelist mode.
+Started to convert Better Pop Up Blocker so that it also works as a Safari extension.
+
+Better Pop Up Blocker 1.5.0 August 4th, 2010
+Reworked the reloading of the tabs after a whitelisting option is made with the whitelister so that the applicable tabs are loaded instead of just one.
+Better Pop Up Blocker now works as a Safari extension using the same code! Next stop is Firefox.
+
+Better Pop Up Blocker 2.0.0 August 8th, 2010
+Tweaked the blocking for pop up windows so that it returns true to the calling scripts. 
+This fools common pop up scripts into thinking a pop up was actually opened, so they won't try to do an in-page overlay.
+
+You can now see up to 3 blocked pop ups (if any) for a page in the whitelister.
+
+Fixed the text overflow and cut off issue in the whitelister.
+
+Iframes now use the more restrictive of the two blocking policies compared to itself and it's hosting window.
+Before the iframe's blocking policy was for it's own url.
+However, blocked pop ups opened by an iframe won't be listed in the whitelister because of a Google Chrome restriction in communications with iframes. 
+This looks like it might be fixed in coming versions of Google Chrome.
+
+Cleaned up the core code to make it more streamlined. Still waiting for Google Chrome and Apple Safari to get better settings access from content scripts.
+For Google Chrome the whitelist/blacklist in the options page now updates live if you keep it open and whitelist/delist sites using the url icon/browser button.
+Apple Safari does not seem to want to live update in the options page. Will have to see what is blocking it.
+
+A blacklist option is now implemented in the options page.
+
+Changed the default blocking for document.createEvents to false to maintain best compatibility with websites. This option has been reset for everyone.
+
+The core code is much more efficient due to tracking some of the local storage change events instead of regenerating all the settings on every new page.
+
+Better Pop Up Blocker 2.0.2/2.0.3 August 9th, 2010
+Minor bug fix release for Google Chrome only. Fixed an issue where blocked urls were not showing up in the whitelister because they were not full urls.
+
+Better Pop Up Blocker 2.1.0 August 10th, 2010
+Introduced blinking of the Better Pop Up Blocker icon when it blocks a pop up window. It is turned on by default for everyone, but you can turn it off in options.
+
+Reverted a bit of code to fix an issue in Better Pop Up Blocker 2.0.0 for Apple Safari when the core code was optimized.
+Sometimes, the browser icon shown did not match the blocking on the current page when a website was whitelisted/delisted and another tab of the same site is open.
+The status would sync up after the user reloaded the page.
+This looks like it is a bug in Apple Safari itself where it doesn't fire events for HTML local storage changes like it should. Will be looking more into it.
+
+Better Pop Up Blocker 2.1.1 August 10th, 2010
+Worked around a crashing bug in Apple Safari by reloading the currently opened tabs when re-enabling/updating Better Pop Up Blocker.
+
+Better Pop Up Blocker 2.1.2 August 10th, 2010
+Fixed a bug where some window.open commands would not work because they used only one argument. Also removed an extra comma.
+
+Better Pop Up Blocker 2.1.3 August 10th, 2010
+Improved the compatibility of the window.open commands. It means there should be fewer site compatibility problems. If you had a problem in the past with a website
+and using Better Pop Up Blocker, try it now because it is likely fixed.
+
+Pop ups selected to open from the whitelister now appear to the immediate right of the current tab instead of the very far right of the window.
+
+Better Pop Up Blocker 2.1.4 August 15th, 2010
+Minor bug fix release while I work on a "very interesting" Google Chrome extension.
+
+More compatibility improvements for window.open.
+
+Fixed a potential issue where a site may not be totally delisted from the whitelist the first time if there are multiple matching rules for the site's url.
+
+Implemented more rigorous url matching.
+
+Added a check so that Google Chrome 5.0 or later is required.
+
+Better Pop Up Blocker 2.1.5 August 26th, 2010
+
+Added a check in the port.js file for Safari to try to solve a crash bug for Safari on Mac users where Safari loses track of a callback. 
+This is a known problem with the Safari extension API itself and not with Better Pop Up Blocker.
+
+Better Pop Up Blocker 2.1.6 September 6th, 2010
+
+Did a reset of blockWindowTargets to false for everyone since some users reported site compatibility issues when blocking window targets by default.

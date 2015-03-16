@@ -1,0 +1,297 @@
+{
+   "add": {
+      "message": "\u65B0\u589E"
+   },
+   "add_domain_button": {
+      "message": "\u65B0\u589E\u7DB2\u57DF"
+   },
+   "add_filter_button": {
+      "message": "\u65B0\u589E\u904E\u6FFE\u689D\u4EF6"
+   },
+   "add_filters_msg": {
+      "message": "\u65B0\u589E\u904E\u6FFE\u689D\u4EF6\uFF1F"
+   },
+   "add_your_own_filters": {
+      "message": "\u65B0\u589E\u81EA\u5DF1\u7684\u904E\u6FFE\u689D\u4EF6"
+   },
+   "apply_changes": {
+      "message": "\u5957\u7528"
+   },
+   "block_element": {
+      "message": "\u963B\u64CB\u7DB2\u9801\u5143\u7D20"
+   },
+   "cancel": {
+      "message": "\u53D6\u6D88"
+   },
+   "clickhide_instructions": {
+      "message": "\u8ACB\u5728\u6B64\u8A0A\u606F\u95DC\u9589\u5F8C\u9EDE\u9078\u7DB2\u9801\u4E0A\u7684\u5143\u7D20\u3002"
+   },
+   "description_chrome": {
+      "description": "Note: this cannot be longer than 132 characters",
+      "message": "Used by over 50 million people, a free ad blocker for Chrome that blocks ALL annoying ads, malware and tracking."
+   },
+   "disabled_for_site": {
+      "message": "\u5728\u6B64\u7DB2\u7AD9\u4E0A \u003Cstrong\u003E\u505C\u7528\u003C/strong\u003E"
+   },
+   "disabled_for_these_domains": {
+      "message": "Adblock Plus \u5C07\u5728\u4EE5\u4E0B\u7DB2\u57DF\u505C\u7528\u3002\u60A8\u53EF\u4EE5\u5229\u7528\u7DB2\u5740\u5217\u4E0A\u7684 Adblock Plus \u5716\u793A\u65B0\u589E\uFF0C\u6216\u5728\u4E0B\u65B9\u8F38\u5165\u7DB2\u57DF (\u800C\u975E\u7DB2\u5740) \u4E26\u9EDE\u64CA\u300C\u65B0\u589E\u7DB2\u57DF\u300D\u6309\u9215\u3002"
+   },
+   "easy_create_filter": {
+      "message": "\u963B\u64CB\u7DB2\u9801\u5143\u7D20"
+   },
+   "edit_filters_raw": {
+      "message": "\u4EE5\u7D14\u6587\u5B57\u7DE8\u8F2F"
+   },
+   "enable_only_the": {
+      "message": "\u53EA\u555F\u7528\u60A8\u9700\u8981\u7684\u904E\u6FFE\u5217\u8868\u3002\u555F\u7528\u592A\u591A\u7684\u904E\u6FFE\u5217\u8868\u53EF\u80FD\u5C0E\u81F4\u60A8\u7684\u700F\u89BD\u5668\u505C\u6B62\u56DE\u61C9\u3002"
+   },
+   "enabled_for_site": {
+      "message": "\u5728\u6B64\u7DB2\u7AD9\u4E0A \u003Cstrong\u003E\u555F\u7528\u003C/strong\u003E"
+   },
+   "filter_lists": {
+      "message": "\u904E\u6FFE\u5217\u8868"
+   },
+   "filter_must_follow_syntax": {
+      "message": "\u60A8\u7684\u904E\u6FFE\u689D\u4EF6\u5FC5\u9808\u9075\u5B88 \u003Ca\u003EAdblock Plus \u7684\u8A9E\u6CD5\u003C/a\u003E."
+   },
+   "filters_acceptableAds2_label": {
+      "message": "\u5141\u8A31\u90E8\u5206\u975E\u4FB5\u5165\u5F0F\u5EE3\u544A"
+   },
+   "filters_addSubscriptionAdd_label": {
+      "message": "\u52A0\u5165"
+   },
+   "filters_addSubscriptionOther_label": {
+      "message": "\u65B0\u589E\u5176\u4ED6\u689D\u4EF6\u96C6"
+   },
+   "filters_addSubscription_label": {
+      "message": "\u65B0\u589E\u904E\u6FFE\u689D\u4EF6\u96C6"
+   },
+   "filters_readMore_label": {
+      "message": "\u8A73\u7D30\u5167\u5BB9"
+   },
+   "filters_subscription_delete_label": {
+      "message": "\u522A\u9664"
+   },
+   "filters_subscription_enabled_label": {
+      "message": "\u555F\u7528"
+   },
+   "filters_subscription_lastDownload_checksumMismatch": {
+      "message": "\u5931\u6557\uFF0C\u9A57\u8B49\u78BC\u4E0D\u7B26"
+   },
+   "filters_subscription_lastDownload_connectionError": {
+      "message": "\u5931\u6557\uFF0C\u6A94\u6848\u4E0B\u8F09\u5931\u6557"
+   },
+   "filters_subscription_lastDownload_inProgress": {
+      "message": "\u4E0B\u8F09\u4E2D..."
+   },
+   "filters_subscription_lastDownload_invalidData": {
+      "message": "\u5931\u6557\uFF0C\u7121\u6548\u7684\u904E\u6FFE\u689D\u4EF6\u5217\u8868"
+   },
+   "filters_subscription_lastDownload_invalidURL": {
+      "message": "\u5931\u6557\uFF0C\u7121\u6548\u7684\u4F4D\u5740"
+   },
+   "filters_viewList_label": {
+      "message": "\u6AA2\u8996\u689D\u4EF6\u5217\u8868"
+   },
+   "firstRun_acceptableAdsExplanation": {
+      "message": "\u6211\u5011\u60F3\u9F13\u52F5\u7DB2\u7AD9\u6539\u63A1\u7C21\u6A38\u4E14\u4E0D\u904E\u65BC\u6436\u773C\u7684\u5EE3\u544A\u3002\u9019\u4E5F\u662F\u6211\u5011\u4E4B\u6240\u4EE5\u5EFA\u7ACB\u003Ca\u003E\u56B4\u683C\u7684\u898F\u7BC4\u003C/a\u003E\u4F86\u8FA8\u8B58\u975E\u4FB5\u5165\u5F0F\u5EE3\u544A\u7684\u539F\u56E0\uFF0C\u9019\u7A2E\u985E\u578B\u7684\u5EE3\u544A\u9810\u8A2D\u6703\u986F\u793A\u51FA\u4F86\u3002\u82E5\u60A8\u4ECD\u60F3\u963B\u64CB\u6240\u6709\u7684\u5EE3\u544A\uFF0C\u53EF\u4EE5\u8F15\u9B06\u5730\u003Ca\u003E\u505C\u7528\u6B64\u529F\u80FD\u003C/a\u003E \u3002"
+   },
+   "firstRun_acceptableAdsHeadline": {
+      "message": "\u5F9E\u73FE\u5728\u8D77\uFF0C\u7169\u4EBA\u7684\u5EE3\u544A\u90FD\u5C07\u7159\u6D88\u96F2\u6563"
+   },
+   "firstRun_contributor_credits": {
+      "message": "\u8CA2\u737B\u540D\u55AE"
+   },
+   "firstRun_dataCorruptionWarning": {
+      "message": "\u9019\u500B\u9801\u9762\u4E00\u76F4\u8DF3\u51FA\u4F86\u55CE\uFF1F \u003Ca\u003E\u8ACB\u770B\u9019\u88E1\uFF01\u003C/a\u003E"
+   },
+   "firstRun_donate": {
+      "message": "\u8D0A\u52A9"
+   },
+   "firstRun_donate_label": {
+      "message": "\u652F\u63F4\u6211\u5011\u7684\u5C08\u6848"
+   },
+   "firstRun_feature_malware": {
+      "message": "\u60E1\u610F\u8EDF\u9AD4\u904E\u6FFE"
+   },
+   "firstRun_feature_malware_description": {
+      "message": "\u904E\u6FFE\u60E1\u610F\u7DB2\u57DF\u53EF\u4F7F\u60A8\u7684\u700F\u89BD\u904E\u7A0B\u66F4\u52A0\u5B89\u5168\u3002"
+   },
+   "firstRun_feature_social": {
+      "message": "\u79FB\u9664\u793E\u4EA4\u5A92\u9AD4\u6309\u9215"
+   },
+   "firstRun_feature_social_description": {
+      "message": "\u81EA\u52D5\u64FA\u812B\u5982 Facebook Like \u9019\u985E\u51FA\u73FE\u5728\u7DB2\u9801\u4E0A\u8FFD\u8E64\u60A8\u700F\u89BD\u7FD2\u6163\u7684\u793E\u4EA4\u6309\u9215\u3002"
+   },
+   "firstRun_feature_tracking": {
+      "message": "\u505C\u7528\u8FFD\u8E64"
+   },
+   "firstRun_feature_tracking_description": {
+      "message": "\u963B\u6B62\u8FFD\u8E64\u529F\u80FD\u624D\u80FD\u9054\u5230\u771F\u6B63\u7684\u96B1\u5BC6\u700F\u89BD - \u6B64\u529F\u80FD\u53EF\u4EE5\u64FA\u812B\u60F3\u76E3\u8996\u60A8\u4E00\u8209\u4E00\u52D5\u7684\u5EE3\u544A\u5546\u3002"
+   },
+   "firstRun_features": {
+      "message": "Adblock Plus \u4E0D\u53EA\u53EF\u4EE5\u904E\u6FFE\u5EE3\u544A"
+   },
+   "firstRun_filterlistsReinitializedWarning": {
+      "message": "\u6709\u4E00\u500B\u554F\u984C\u5DF2\u522A\u9664\u4E86\u6240\u6709\u7684\u5EE3\u544A\u904E\u6FFE\u5668\uFF0C\u6211\u5011\u4E5F\u7121\u6CD5\u9084\u539F\u5099\u4EFD\u3002\u56E0\u6B64\u6211\u5011\u5F97\u91CD\u65B0\u8A2D\u7F6E\u60A8\u7684\u5EE3\u544A\u904E\u6FFE\u5668\u548C\u53EF\u63A5\u53D7\u7684\u5EE3\u544A\u8A2D\u7F6E\u3002\u8ACB\u5728\u003Ca\u003EAdblock Plus \u9078\u9805\u003C/a\u003E\u88E1\u6AA2\u67E5\u60A8\u7684\u5EE3\u544A\u904E\u6FFE\u5668\u540D\u55AE\u548C\u53EF\u63A5\u53D7\u7684\u5EE3\u544A\u8A2D\u7F6E\u3002"
+   },
+   "firstRun_legacySafariWarning": {
+      "message": "\u60A8\u6B63\u5728\u4F7F\u7528 Adblock Plus \u6240\u4E0D\u652F\u63F4\u7684\u820A\u7248 Safari\u3002\u9019\u53EF\u80FD\u5F71\u97FF\u4F7F\u7528\u8005\u9AD4\u9A57\u6216\u5C0E\u81F4\u529F\u80FD\u5931\u5E38\u3002\u6211\u5011\u5F37\u70C8\u5EFA\u8B70\u5C07 Safari \u66F4\u65B0\u81F3 6.1.1 \u4EE5\u4E0A\u7248\u672C (OS X 10.8 Mountain Lion \u7CFB\u7D71)\uFF0C\u6216\u66F4\u65B0\u81F3 Safari 7.0.1 (OS X 10.9 Mavericks \u7CFB\u7D71) \u4EE5\u4E0A\u7248\u672C\uFF0C\u6216\u53EF\u8003\u616E\u6539\u7528\u6700\u65B0\u7248\u7684 Mozilla Firefox, Google Chrome \u6216 Opera\u3002"
+   },
+   "firstRun_share": {
+      "message": "\u544A\u8A34\u60A8\u7684\u670B\u53CB"
+   },
+   "firstRun_share_headline": {
+      "message": "\u003Ca\u003E\u8ACB\u52A9\u6211\u5011\u4E00\u81C2\u4E4B\u529B\u003C/a\u003E\uFF0C\u8B93\u7DB2\u8DEF\u8B8A\u5F97\u66F4\u7F8E\u597D"
+   },
+   "firstRun_title": {
+      "message": "Adblock Plus \u5DF2\u5B89\u88DD\u5B8C\u6210"
+   },
+   "firstRun_toggle_off": {
+      "message": "\u95DC\u9589"
+   },
+   "firstRun_toggle_on": {
+      "message": "\u958B\u555F"
+   },
+   "found_a_bug": {
+      "message": "\u767C\u73FE bug\uFF1F\u60F3\u8981\u7FFB\u8B6F Adblock Plus\uFF1F\u8ACB\u81F3 \u003Ca\u003E\u6B64\u8655\u8A62\u554F\u003C/a\u003E\u3002"
+   },
+   "general": {
+      "message": "\u4E00\u822C\u8A2D\u5B9A"
+   },
+   "global_filter_elemhide_duplicate_id": {
+      "message": "\u53EA\u80FD\u6307\u5B9A\u4E00\u500B ID \u4F86\u96B1\u85CF\u8A72\u5143\u7D20"
+   },
+   "global_filter_elemhide_nocriteria": {
+      "message": "\u6C92\u6709\u6307\u5B9A\u6B32\u96B1\u85CF\u5143\u7D20\u7684\u8FA8\u8B58\u540D\u7A31"
+   },
+   "global_notification_antiadblock_message": {
+      "message": "\u5DF2\u77E5\u6B64\u7DB2\u7AD9\u6703\u5C0D Adblock Plus \u7528\u6236\u986F\u793A\u91DD\u5C0D\u6027\u7684\u8A0A\u606F\u3002\u60A8\u5E0C\u671B Adblock Plus \u96B1\u85CF\u5B83\u5011\u55CE\uFF1F"
+   },
+   "global_notification_antiadblock_title": {
+      "message": "\u96B1\u85CF\u91DD\u5C0D\u6027\u7684\u8A0A\u606F\uFF1F"
+   },
+   "global_remove_subscription_warning": {
+      "message": "\u60A8\u78BA\u5B9A\u8981\u79FB\u9664\u6B64\u689D\u4EF6\u96C6\u55CE\uFF1F"
+   },
+   "global_subscription_invalid_location": {
+      "message": "\u689D\u4EF6\u96C6\u7DB2\u5740\u6216\u6A94\u6848\u540D\u7A31\u7121\u6548\u3002"
+   },
+   "last_updated_at": {
+      "message": "\u6700\u5F8C\u66F4\u65B0\u65BC $date$ $time$",
+      "placeholders": {
+         "date": {
+            "content": "$2"
+         },
+         "time": {
+            "content": "$1"
+         }
+      }
+   },
+   "last_updated_at_today": {
+      "message": "\u6700\u8FD1\u66F4\u65B0\u65BC\u4ECA\u5929 $time$",
+      "placeholders": {
+         "time": {
+            "content": "$1"
+         }
+      }
+   },
+   "name": {
+      "message": "Adblock Plus"
+   },
+   "name_devbuild": {
+      "message": "Adblock Plus\u958B\u767C\u7248"
+   },
+   "notification_with_buttons": {
+      "message": "\u9EDE\u64CA\uFF02\u78BA\u5B9A\uFF02\u6253\u958B\u901A\u77E5\u4E2D\u7684\u6240\u6709\u93C8\u63A5\uFF0E"
+   },
+   "notification_without_buttons": {
+      "message": "\u9EDE\u64CA\u901A\u77E5\u6253\u958B\u5B83\u7684\u6240\u6709\u93C8\u63A5"
+   },
+   "options": {
+      "message": "Adblock Plus \u9078\u9805"
+   },
+   "options_short": {
+      "message": "\u9078\u9805"
+   },
+   "out_of_date_lists": {
+      "message": "\u904E\u6FFE\u5217\u8868\u6703\u5B9A\u671F\u81EA\u52D5\u66F4\u65B0\u3002"
+   },
+   "overlay_hideplaceholders_label": {
+      "message": "\u96B1\u85CF\u5DF2\u963B\u64CB\u5143\u7D20\u6240\u4F54\u7528\u7684\u7A7A\u9593"
+   },
+   "overlay_notification_button_close": {
+      "message": "\u95DC\u9589"
+   },
+   "overlay_notification_button_no": {
+      "message": "\u53D6\u6D88"
+   },
+   "overlay_notification_button_yes": {
+      "message": "\u78BA\u5B9A"
+   },
+   "remove_button": {
+      "message": "\u522A\u9664\u5DF2\u9078\u64C7\u9805\u76EE"
+   },
+   "show_block_element_menu": {
+      "message": "\u5728\u53F3\u9375\u9078\u55AE\u986F\u793A\u300C\u963B\u64CB\u7DB2\u9801\u5143\u7D20\u300D"
+   },
+   "stats_label_page": {
+      "message": "\u672C\u9801\u6709 \u003Cstrong\u003E$number$\u003C/strong\u003E  \u9805\u88AB\u904E\u6FFE",
+      "placeholders": {
+         "number": {
+            "content": "$1"
+         }
+      }
+   },
+   "stats_label_total": {
+      "message": "\u5171\u6709 \u003Cstrong\u003E$number$\u003C/strong\u003E \u9805\u88AB\u904E\u6FFE",
+      "placeholders": {
+         "number": {
+            "content": "$1"
+         }
+      }
+   },
+   "stats_over": {
+      "message": "$number$",
+      "placeholders": {
+         "number": {
+            "content": "$1"
+         }
+      }
+   },
+   "stats_share_download": {
+      "message": "\u4E0B\u8F09 Adblock Plus"
+   },
+   "stats_share_message": {
+      "message": "\u611F\u8B1D Adblock Plus\uFF0C\u81F3\u4ECA\u6211\u5DF2\u904E\u6FFE\u6389\u4E86 $number$ \u500B\u5EE3\u544A\u3002",
+      "placeholders": {
+         "number": {
+            "content": "$1"
+         }
+      }
+   },
+   "stats_share_title": {
+      "message": "\u5206\u4EAB\u9019\u4E9B\u6578\u5B57"
+   },
+   "stats_show_iconnumber": {
+      "message": "\u5728\u5716\u793A\u4E0A\u986F\u793A\u6578\u91CF"
+   },
+   "stats_title": {
+      "message": "\u5DF2\u904E\u6FFE\u5EE3\u544A"
+   },
+   "subscriptionSelection_location_label": {
+      "message": "\u904E\u6FFE\u689D\u4EF6\u96C6\u4F4D\u5740\uFF1A"
+   },
+   "subscriptionSelection_subscriptionSelector_label": {
+      "message": "\u8ACB\u5F9E\u5217\u8868\u4E2D\u9078\u64C7\u904E\u6FFE\u689D\u4EF6\u96C6:"
+   },
+   "subscriptionSelection_title_label": {
+      "message": "\u904E\u6FFE\u689D\u4EF6\u96C6\u540D\u7A31\uFF1A"
+   },
+   "update_now": {
+      "message": "\u7ACB\u5373\u66F4\u65B0"
+   },
+   "whitelisted_domains": {
+      "message": "\u767D\u540D\u55AE"
+   }
+}

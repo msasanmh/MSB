@@ -1,0 +1,33 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "browser_action": {
+      "default_icon": "img/icons/omega-32.png",
+      "default_popup": "popup.html",
+      "default_title": "__MSG_manifest_icon_default_title__"
+   },
+   "commands": {
+      "_execute_browser_action": {
+         "suggested_key": {
+            "default": "Alt+Shift+O"
+         }
+      }
+   },
+   "default_locale": "en",
+   "description": "__MSG_manifest_app_description__",
+   "icons": {
+      "128": "img/icons/omega-128.png",
+      "16": "img/icons/omega-16.png",
+      "32": "img/icons/omega-32.png",
+      "48": "img/icons/omega-48.png",
+      "64": "img/icons/omega-64.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC3EEb02KUlY+7s3+44xrR1Q2LrZkotBYx0P0Gdk8NSbcthLvc1aiiS4dHS822CJ7/AUgDyQwkyLXCyUaABtGVR/yd9mr7zjaOlNJlOrh+SRBdaMWhHv3NQ1s9lYXj1DB5A2Cf0ym2mcL/lPNxe1oMw6ZQVHVNAq86OmHox6LzCJQIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_manifest_app_name__",
+   "options_page": "options.html",
+   "permissions": [ "management", "proxy", "tabs", "alarms", "storage", "webRequest", "webRequestBlocking", "contextMenus", "http://*/*", "https://*/*", "ftp://*/*", "\u003Call_urls\u003E" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.3.8"
+}

@@ -1,0 +1,71 @@
+{
+   "LAST_ITEM_DO_NOT_REMOVE": {
+      "message": "DO NOT REMOVE"
+   },
+   "alreadyDonated": {
+      "message": "\u5DF2\u6350\u51FA\uFF1F"
+   },
+   "amount": {
+      "message": "\u91D1\u989D"
+   },
+   "continue": {
+      "message": "\u7EE7\u7EED"
+   },
+   "continueWithoutFeatures": {
+      "message": "\u7EE7\u7EED\u4F7F\u7528\u8FD9\u4E9B\u989D\u5916\u7684\u529F\u80FD\uFF0C\u6CA1\u6709\u6B64\u6269\u5C55\u3002"
+   },
+   "creditCardOrPaypal": {
+      "message": "\u60A8\u53EF\u4EE5\u4F7F\u7528\u4FE1\u7528\u5361\u6216PayPal\u6350\u8D60"
+   },
+   "currencyCode": {
+      "message": "HKD"
+   },
+   "description": {
+      "message": "\u5728\u5C4F\u5E55\u4E0A\u65F6\uFF0C\u4F7F\u7528\u96C5\u864E\u90AE\u4EF6\uFF0CHotmail\u548CGmail\u7684\u7A7A\u95F4\uFF0C\u4ECE\u800C\u6269\u5927\u60A8\u7684\u6D88\u606F\u53F3\u8FB9\u5EA7\u5E7F\u544A"
+   },
+   "donateButton": {
+      "message": "https://www.paypal.com/zh_CN/i/btn/btn_donate_SM.gif"
+   },
+   "donateToRemove": {
+      "message": "\u60A8\u53EF\u4EE5\u5220\u9664\u6B64\u94FE\u63A5\u7ACB\u5373\u7528\u6350\u8D60\u4EFB\u4F55\u6570\u989D\u7684\u4E00\u6B21\u6027\u6350\u6B3E\uFF01"
+   },
+   "enterAnAmount": {
+      "message": "\u60A8\u5FC5\u987B\u8F93\u5165\u91CF\uFF01"
+   },
+   "extraFeatures": {
+      "message": "\u989D\u5916\u7684\u529F\u80FD"
+   },
+   "minimumDonation": {
+      "message": "4"
+   },
+   "minimumDonationForGoogleCheckout": {
+      "message": "0.50"
+   },
+   "name": {
+      "message": "Webmail Ad Blocker"
+   },
+   "option": {
+      "message": "\u9009\u9879"
+   },
+   "or": {
+      "message": "\u6216"
+   },
+   "pleaseDonate": {
+      "message": "\u8BF7\u6350\u8D60\u5230\u672C\u6269\u5C55\u7684\u4F5C\u8005\uFF0C\u8BF7\u70B9\u51FB\u6B64\u5904\uFF01"
+   },
+   "pleaseDonate2": {
+      "message": "\u6350\u8D60\u540E\u624D\u53EF\u4EE5\u5728\u9009\u9879\u4E2D\u5220\u9664\u6B64\u94FE\u63A5"
+   },
+   "removeDonationLink": {
+      "message": "\u5220\u9664\u6350\u8D60\u94FE\u63A5"
+   },
+   "securely": {
+      "message": "\u7262\u56FA"
+   },
+   "thankYou": {
+      "message": "\u611F\u8C22\u60A8\u4F7F\u7528\u6211\u7684\u6269\u5C55\u4F60\uFF01"
+   },
+   "unlockFeatures": {
+      "message": "\u8FD9\u4E9B\u7279\u5F81\u548C\u89E3\u9501\u7684\u4EFB\u4F55\u503C\uFF0C\u5B83\u4EEC\u5C06\u7ACB\u5373\u63D0\u4F9B\u4E00\u6B21\u6027\u6350\u8D60\u672A\u6765\u7684\uFF01"
+   }
+}

@@ -1,0 +1,27 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "content.js" ],
+      "matches": [ "*://localhost/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "Keep Disable WebFreer Self-Defense.\r\n(DO NOT DISABLE or REMOVE THIS EXTENSION)",
+   "homepage_url": "https://www.facebook.com/WebFreer.Portable.ADs.Free/",
+   "icons": {
+      "128": "msmh-png-210.png",
+      "16": "msmh-png-210.png",
+      "48": "msmh-png-210.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDC4YasurxPGS7I0YqZwDxYjIaPw77awoFJuFFI7OlaVbEiI+lyvJ8WrCB86AXPs97nIPuZKZ8JmIXy2vZy6J5RMwumXV0q9D030OK5vzZdWU+NzEKMz4lqWUdsKVi0X7n3HmTrmjHAHUQMbiO24V2TD0ldISsU1U/sthow+/l9aQIDAQAB",
+   "manifest_version": 2,
+   "name": "MSasanMH WebFreer Self-Defense Disabler",
+   "page_action": {
+      "default_icon": "msmh-png-210.png"
+   },
+   "permissions": [ "tabs", "management", "*://localhost/*" ],
+   "update_url": "http://webfreer-portable-ads-free.sourceforge.net/ext_MSMH-Disabler/updates.xml",
+   "version": "2.8"
+}

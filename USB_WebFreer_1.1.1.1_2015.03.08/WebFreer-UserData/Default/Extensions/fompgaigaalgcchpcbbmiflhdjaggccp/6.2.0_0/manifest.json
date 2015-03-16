@@ -1,0 +1,42 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "browser_action": {
+      "default_icon": "favicon.png",
+      "default_popup": "popup.html",
+      "default_title": "__MSG_appName__"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "js/hotkeys.js" ],
+      "matches": [ "\u003Call_urls\u003E" ],
+      "run_at": "document_end"
+   } ],
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+   "default_locale": "en",
+   "description": "__MSG_appDesc__",
+   "homepage_url": "https://nimbus.everhelper.me",
+   "icons": {
+      "128": "images/icons/128x128.png",
+      "16": "images/icons/16x16.png",
+      "19": "images/icons/19x19.png",
+      "32": "images/icons/32x32.png",
+      "48": "images/icons/48x48.png",
+      "64": "images/icons/64x64.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDCWAG3p0juMdBc2wr84yDslmnnPmzIIrU7SQYdLHuI7cCBNwwXMSfpvMUEZy71cSGp3J5VXT7y6oAKJYRgBRmxt0QmAfOCdod64YIDdq5Jsl8mvahO7tJ16FVePF4K373fvvJ1H1UF2FU7ry8UEBZW7W87bUAjzqFDyokGAYhWPwIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_appName__",
+   "oauth2": {
+      "client_id": "330587763390.apps.googleusercontent.com",
+      "scopes": [ "https://www.googleapis.com/auth/drive.readonly.metadata https://www.googleapis.com/auth/drive.file" ]
+   },
+   "offline_enabled": true,
+   "options_page": "options.html",
+   "permissions": [ "downloads", "cookies", "clipboardWrite", "clipboardRead", "tabs", "activeTab", "storage", "unlimitedStorage", "contextMenus", "notifications", "\u003Call_urls\u003E", "identity" ],
+   "short_name": "Screen Capture",
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "6.2.0",
+   "web_accessible_resources": [ "favicon.png" ]
+}

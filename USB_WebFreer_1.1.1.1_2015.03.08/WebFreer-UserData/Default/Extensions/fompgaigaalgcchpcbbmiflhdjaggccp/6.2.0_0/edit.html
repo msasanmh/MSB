@@ -1,0 +1,604 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Edit - Nimbus Screenshot</title>
+
+    <link type="text/css" href="css/editscreen.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection"/>
+    <link type="text/css" href="css/jquery.Jcrop.css" rel="stylesheet"/>
+    <link type="text/css" href="css/tipsy.css" rel="stylesheet"/>
+    <link type="text/css" href="css/stylecrop.css" rel="stylesheet"/>
+    <link type="text/css" href="css/jquery.ambiance.css" rel="stylesheet">
+    <link type="text/css" href="css/spectrum.css" rel="stylesheet">
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.Jcrop.js"></script>
+    <script src="js/jquery.ambiance.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/jquery.tipsy.js"></script>
+    <script src="js/canvasPaint.js"></script>
+    <script src="js/nimbusShare.js"></script>
+    <script src="js/jquery.formstyler.js"></script>
+    <script src="js/spectrum.js"></script>
+    <script src="js/screen.js"></script>
+</head>
+<body>
+
+<div id="wrapper">
+    <div id="editpanel">
+        <input id="file-open" type="file" name="files[]" accept="image/*" style="display: none">
+        <button id="open-image" class="save_settings done"><i class="icon"></i><span>Open</span></button>
+        <div class="zoom">
+            <button id="zoomplus" class="panel_btn zoomplus" title="zoom +"><span></span></button>
+            <button id="zoomminus" class="panel_btn zoomminus" title="zoom -"><span></span></button>
+            <div style="float:left" class="small percent">
+                <form action="#">
+                    <select id="percent" class="panel_btn percent">
+                        <option value="0.25">25%</option>
+                        <option value="0.5">50%</option>
+                        <option value="0.75">75%</option>
+                        <option value="1" selected>100%</option>
+                        <option value="1.25">125%</option>
+                        <option value="1.5">150%</option>
+                        <option value="1.75">175%</option>
+                        <option value="2">200%</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+
+        <button id="done" class="save_settings done"><i class="icon"></i><span>done</span></button>
+
+        <div class='tools'>
+            <div class="size">
+                <h5>Size:</h5>
+
+                <div class="drop resize_image">
+                    <button id="resize" class="panel_btn resize" title="resize"><span></span></button>
+                    <div id="resize-img" class="drop_panel">
+                        <form>
+                            <div>
+                                <label>Width</label>
+                                <input id="img-width" name="width" type="number" min="1" max="5000" value="1">
+                                <span class="px">px.</span>
+
+                                <div class="clr"></div>
+                            </div>
+                            <div>
+                                <label>Height</label>
+                                <input id="img-height" name="height" type="number" min="1" max="40000" value="1">
+                                <span class="px">px.</span>
+
+                                <div class="clr"></div>
+                            </div>
+                            <div class="chk">
+                                <input id="proportional" type="checkbox" checked value="">proportional
+
+                            </div>
+                            <div class="buttons">
+                                <button id="resize-ok">Resize</button>
+                                <button id="resize-cancel">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <button id="crop" class="panel_btn crop" title="crop"><span></span></button>
+            </div>
+            <div class="drawing_tools">
+                <h5>Drawing tools:</h5>
+                <button id="pen" class="panel_btn pen" title="pen"><span></span></button>
+                <div style="float:left" class="small">
+                    <select id="rectangle" class="panel_btn active">
+                        <option value="rectangle" class="rectangle" selected>1</option>
+                        <option value="rounded_rectangle" class="rounded_rectangle">2</option>
+                    </select>
+                </div>
+                <div style="float:left" class="small">
+                    <select id="ellipse" class="panel_btn">
+                        <option value="sphere" class="sphere">1</option>
+                        <option value="ellipse" class="ellipse" selected>2</option>
+                    </select>
+                </div>
+                <div style="float:left" class="small">
+                    <select id="line" class="panel_btn">
+                        <option value="line" class="line">1</option>
+                        <option value="line-curve" class="line_curve" selected>2</option>
+                    </select>
+                </div>
+                <div style="float:left" class="small">
+                    <select id="arrow" class="panel_btn">
+                        <option value="arrow" class="arrow1">1</option>
+                        <option value="arrow-curve" class="arrow_curve">2</option>
+                    </select>
+                </div>
+
+                <button id="text" class="panel_btn text" title="draw text"><span></span></button>
+
+                <div style="float:left" class="small">
+                    <select id="inscription" class="panel_btn">
+                        <option value="text_arrow" class="text_arrow">1</option>
+                        <option value="sticker" class="sticker">2</option>
+                    </select>
+                </div>
+
+                <div class="options_tools">
+                    <h5>Size:</h5>
+                    <div style="float:left" class="long">
+                        <select id="line-width" class="panel_btn">
+                            <option value="1" class="line_width1">1px</option>
+                            <option value="2" class="line_width2">2px</option>
+                            <option value="3" class="line_width3" selected>3px</option>
+                            <option value="4" class="line_width4">4px</option>
+                            <option value="5" class="line_width5">5px</option>
+                            <option value="6" class="line_width6">6px</option>
+                            <option value="7" class="line_width7">7px</option>
+                            <option value="8" class="line_width8">8px</option>
+                            <option value="9" class="line_width9">9px</option>
+                            <option value="10" class="line_width10">10px</option>
+                            <option value="15" class="line_width15">15px</option>
+                        </select>
+                    </div>
+
+                    <div style="float:left" class="color">
+                        <select id="colortools" class="panel_btn color">
+                            <option value="#FFFFFF" class="col1">1</option>
+                            <option value="#FF0000" class="col2" selected>2</option>
+                            <option value="#00C000" class="col3">3</option>
+                            <option value="#FFFF00" class="col4">4</option>
+                            <option value="#0000FF" class="col5">5</option>
+                            <option value="#b8b8b8" class="col6">6</option>
+                            <option value="#8e0707" class="col7">7</option>
+                            <option value="#0c8564" class="col8">8</option>
+                            <option value="#ff6600" class="col9">9</option>
+                            <option value="#000a88" class="col10">10</option>
+                            <option value="#000000" class="col11">11</option>
+                            <option value="#570303" class="col12">12</option>
+                            <option value="#064f3b" class="col13">13</option>
+                            <option value="#697202" class="col14">14</option>
+                            <option value="#000545" class="col15">15</option>
+                        </select>
+                    </div>
+
+                    <!--<button id="eraser" class="panel_btn eraser"><span></span></button>-->
+
+                    <div style="float:left" class="small">
+                        <select id="blur" class="panel_btn">
+                            <option value="blur" class="blur">1</option>
+                            <option value="blur-all" class="blur_all">2</option>
+                        </select>
+                    </div>
+                    <div class="drop tools_shadow">
+                        <button id="shadow" class="panel_btn shadow" title="shadow"><span></span><i class="arrow"></i></button>
+                        <div id="tools-shadow" class="drop_panel">
+                            <div class="chk">
+                                <input id="enable-shadow" type="checkbox" checked value="">Enable
+                            </div>
+                            <div>
+                                <label>Size</label>
+                                <input id="shadow-width" name="width" type="number" min="1" max="50" value="1">
+                                <span class="px">px.</span>
+                                <div class="clr"></div>
+                            </div>
+                            <div>
+                                <label>Color</label>
+                                <div style="float:left" class="color">
+                                    <select id="colorshadow" class="panel_btn color">
+                                        <option value="#FFFFFF" class="col1">1</option>
+                                        <option value="#FF0000" class="col2" selected>2</option>
+                                        <option value="#00C000" class="col3">3</option>
+                                        <option value="#FFFF00" class="col4">4</option>
+                                        <option value="#0000FF" class="col5">5</option>
+                                        <option value="#b8b8b8" class="col6">6</option>
+                                        <option value="#8e0707" class="col7">7</option>
+                                        <option value="#0c8564" class="col8">8</option>
+                                        <option value="#ff6600" class="col9">9</option>
+                                        <option value="#000a88" class="col10">10</option>
+                                        <option value="#000000" class="col11">11</option>
+                                        <option value="#570303" class="col12">12</option>
+                                        <option value="#064f3b" class="col13">13</option>
+                                        <option value="#697202" class="col14">14</option>
+                                        <option value="#000545" class="col15">15</option>
+                                    </select>
+                                </div>
+                                <!--<input id="shadow-color" type="color" name="color">-->
+                                <div class="clr"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <input type='text' id="fillcolor" />
+                </div>
+            </div>
+            <div class="actions">
+                <h5>Actions:</h5>
+                <button id="undo" class="panel_btn undo inert" title="undo"><span></span></button>
+                <button id="redo" class="panel_btn redo inert" title="redo"><span></span></button>
+                <button id="undo-all" class="panel_btn undo_all inert" title="undo all"><span></span></button>
+            </div>
+            <button id="numbers" class="panel_btn numbers" title="display numbers"><span></span></button>
+            <div class="clr"></div>
+        </div>
+
+        <div class="clr"></div>
+    </div>
+    <div id="panel">
+
+        <div id="photo">
+            <img id="imageedit" src="">
+
+            <div id="editcanva"></div>
+        </div>
+
+    </div>
+</div>
+<div id="background">
+
+<div id="save-img">
+    <div class="save_screenshot_block">
+        <a id="imgfordownload" class="download_screenshot" href="#" download="screencapture">
+            <i class="save_screenshot"></i><span>Save screenshot</span></a>
+    </div>
+    <div class="clr"></div>
+    <div id="save-panel">
+        <div id="save-buttons">
+            <button class="main_btn back" id="back"><i class="back_icon"></i><span>Back</span></button>
+
+            <div style="display: none">
+
+                <button id="choose-nimbus-share" class="panel_trigger"><i class="scroll_down"></i></button>
+            </div>
+            <button class="main_btn" id="save-nimbus"><i class="save_to_nimbus_icon"></i><span>Save to Nimbus</span>
+            </button>
+
+            <button class="main_btn" id="save-image"><i class="save_image_icon"></i><span>Save as Image</span>
+            </button>
+            <div id="select_folder" class="panel_settings">
+                <div>
+                    <span class="title"></span>
+                    <label>
+                        <input type="checkbox" name="share" value="">
+                        <span class="private">private</span>
+                    </label>
+                </div>
+            </div>
+            <button class="main_btn" id="send-to-google"><i
+                    class="send_to_google_icon"></i><span>Send to Google</span></button>
+            <button id="choose-folder" class="panel_trigger"><i class="scroll_down"></i></button>
+            <button class="main_btn" id="copy-to-clipboard"><i
+                    class="copy_img_icon"></i><span>Copy to Clipboard</span></button>
+            <button class="main_btn" id="print-img"><i class="print_img_icon"></i><span>Print Image</span></button>
+            <div class="clr"></div>
+        </div>
+        <div id="linked">
+            <input id="clipboard_text" type="text" value="qqqq"/>
+            <button id="copy_URL" data-clipboard-text="clipboard_text"></button>
+            <button id="short_URL" data-clipboard-text="short_url"></button>
+        </div>
+        <div id="message"><a href="https://nimbus.everhelper.me/client/" target="_blank">View my Nimbus uploads</a>
+        </div>
+        <div id="uploadimg"></div>
+        <div class="clr"></div>
+    </div>
+    <div id="indicator">
+        <div class="screensize"><span></span></div>
+        <div class="screenweight"><span></span></div>
+    </div>
+    <div id="preview">
+        <img src="images/pattern.png" alt="screensave">
+    </div>
+    <div id="nimbus-comment">
+        <textarea placeholder="comment your screenshot"></textarea>
+        <button id="nimbus-comment-upload" class="save_settings done"><i
+                class="icon"></i><span>comment and upload</span></button>
+    </div>
+
+
+    <div id="nimbus-rate" class="rate_message">
+        <p class="title">
+            Love Nimbus Screenshot? Please rate it!
+        </p>
+        <p>
+            <a class="feedback" href="https://fvdmedia.userecho.com/list/21580-nimbus-products/?category=4925"
+               target="_blank">Bad</a>
+            <a class="feedback" href="https://fvdmedia.userecho.com/list/21580-nimbus-products/?category=4925"
+               target="_blank">Might be better</a>
+            <a class="reviews"
+               href="https://chrome.google.com/webstore/detail/nimbus-screen-capture-app/gooiepmnbooemimlnlbijlfoofgjnngn"
+               target="_blank">Good!</a>
+            <a id="disable-rate-message" href="#">Already did</a>
+        </p>
+    </div>
+</div>
+
+</div>
+<div id="file_manager" class="popup_bg">
+    <div id="folder_content" class="popup_content">
+        <div>
+            <button class="btn_cancel"></button>
+            <div class="file_manager_title">
+                <i class="google"></i><span>Send to Google Drive</span>
+            </div>
+            <div class="future_folder_label">Please, select folder you want to save screenshot</div>
+            <div class='folders-list'>
+                <div id="parent"></div>
+                <div id="current"></div>
+                <ul class="folders">
+                </ul>
+            </div>
+            <div id="future_folder" class="future_folder">You will save your screenshot to:</div>
+            <button id="btn_select" class="save_settings done"><i class="icon"></i><span>Done</span></button>
+        </div>
+    </div>
+</div>
+
+<div id="user-panel" class="popup_bg">
+<div id="nimbus-panel" class="popup_content">
+    <div>
+        <button class="btn_cancel"></button>
+        <div class="nimbus_title">
+            <i class="nimbus"></i><span>Send to Nimbus Note</span>
+        </div>
+
+        <div class="content">
+            <div class="nimbus_comment">
+                <p class="comment">Comment:</p>
+                <textarea></textarea>
+            </div>
+            <div class="nimbus_form">
+                <p class="username">Username:</p>
+
+                <div id="username" class="nimbus_input">
+                    <span id="user-email"></span>
+                    <a href="#" id="user-logout"></a>
+                </div>
+                <p class="folder">Folder:</p>
+
+                <div id="nimbus_folder" class="nimbus_input">
+                    <img src="images/icon_folder.png">
+                    <span id="nimbus-folder">My Notes</span>
+                    <a href="#" id="change-nimbus-folder"></a>
+
+                    <div id="nimbus_folders">
+                        <ul class="folders">
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <label>
+                        <input id="nimbus-share" type="checkbox" name="share" value=''>
+                        <span class="private">private</span>
+                    </label>
+                </div>
+            </div>
+            <div id="nimbus-future-folder" class="future_folder">You will save your screenshot to:</div>
+
+            <div class="submit nimbus-submit">
+
+                <button id="save-to-nimbus" type="submit" class="save_settings" name="upload">
+                    <i class="icon"></i><span>Start upload</span>
+                </button>
+
+                <div id="nimbus-limit">
+                    <span></span>
+
+                    <div>
+                        <progress value="0" max="100"></progress>
+                    </div>
+                </div>
+
+                <button id="my-uploads-nimbus" type="submit" class="save_settings op" name="nimbus">
+                    <span>My uploads</span></button>
+
+                <a id="to-nimbus-pro" href="http://nimbus.everhelper.me/pricing.php" target="_blank">Why is Nimbus Pro
+                    better?</a>
+            </div>
+
+            <div id="nimbus-pro">
+                <img src="images/nimbus_pro.png">
+
+                <div class="nimbus-pro-info big">
+                    Unfortunately, you have <strong>no free space</strong>
+                </div>
+                <div class="nimbus-pro-info">
+                    If you want more space, you have to <strong>upgrade your subscription to Nimbus Pro</strong>.
+                </div>
+                <button id="go-to-nimbus-pro" class="save_settings"><span>Go to Nimbus Pro</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="login-panel" class="popup_content">
+    <div>
+        <button class="btn_cancel"></button>
+        <div class="nimbus_title">
+            <i class="nimbus"></i><span>Send to Nimbus Note</span>
+        </div>
+        <div class="nimbus_header">Login</div>
+
+        <div class="nimbus_info">
+            With Nimbus account you can comment your screenshots and share them with your friends and colleagues.
+        </div>
+        <div class="nimbus_form">
+            <form id="form-login" method="POST" novalidate>
+                <p class="login">Login:</p>
+
+                <div>
+                    <label>
+                        <input type="email" name="email" placeholder="email">
+                    </label>
+                </div>
+                <p class="password">Password:</p>
+
+                <div>
+                    <label>
+                        <input type="password" name="pass" placeholder="password">
+                    </label>
+                </div>
+                <div>
+                    <a id="forgot-pass" href="#">Forgot your password? </a>
+                </div>
+                <div class="submit nimbus-submit">
+                    <button id="user-login" type="submit" class="save_settings" name="signin">
+                        <i class="icon"></i><span>Login</span>
+                    </button>
+                    <button id="user-flip-l" class="save_settings op" name="signup"><span>Sign up</span></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="register-panel" class="popup_content">
+    <div>
+        <button class="btn_cancel"></button>
+        <div class="nimbus_title">
+            <i class="nimbus"></i><span>Send to Nimbus Note</span>
+        </div>
+        <div class="nimbus_header">Registration</div>
+
+        <div class="nimbus_info">
+            With Nimbus account you can comment your screenshots and share them with your friends and colleagues.
+        </div>
+        <div class="nimbus_form">
+            <form id="form-register" method="POST" novalidate>
+                <p class="email">Email:</p>
+
+                <div>
+                    <label>
+                        <input type="email" name="email" placeholder="email">
+                    </label>
+                </div>
+                <p class="password">Password:</p>
+
+                <div>
+                    <label>
+                        <input type="password" name="pass" placeholder="password">
+                    </label>
+                </div>
+                <p class="repass">Retype password:</p>
+
+                <div>
+                    <label>
+                        <input type="password" name="pass-repeat" placeholder="repeat password">
+                    </label>
+                </div>
+                <div class="submit nimbus-submit">
+                    <button id="user-flip-r" class="save_settings op" type="submit" name="signin"><span>Login</span>
+                    </button>
+                    <button id="user-registration" class="save_settings" name="signup"><i
+                            class="icon"></i><span>Sign up</span></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="change-pass-panel" class="popup_content">
+    <div>
+        <button class="btn_cancel"></button>
+        <div>
+            Change Password:
+        </div>
+        <br>
+
+        <form id="form-change-pass" method="POST">
+            <p>Last password:</p>
+
+            <div>
+                <label>
+                    <input type="password" name="pass" placeholder="password">
+                </label>
+            </div>
+            <p>New password:</p>
+
+            <div>
+                <label>
+                    <input type="password" name="new-pass" placeholder="new password">
+                </label>
+            </div>
+            <p>Repeat new password:</p>
+
+            <div>
+                <label>
+                    <input type="password" name="new-pass-repeat" placeholder="repeat new password">
+                </label>
+            </div>
+            <div class="submit">
+                <button id="user-change-pass" class="save_settings done" name="change">Change Password</button>
+                <button id="back-to-authorized" class="save_settings done" name="back">< back</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div id="confirm-change-pass-panel" class="popup_content">
+    <div>
+        <button class="btn_cancel"></button>
+        <div>
+            Confirm Change Pass:
+        </div>
+        <br>
+
+        <form id="confirm-change-pass" method="POST">
+            <p>Key:</p>
+
+            <div>
+                <label>
+                    <input type="text" name="key" placeholder="key" required>
+                </label>
+            </div>
+            <div class="submit">
+                <button id="confirm-change" class="save_settings done" type="submit" name="confirm">Confirm</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div id="remind-password-panel" class="popup_content">
+    <div>
+        <button class="btn_cancel"></button>
+        <div class="nimbus_title">
+            <i class="nimbus"></i><span>Send to Nimbus Note</span>
+        </div>
+        <div class="nimbus_header">Remind password</div>
+
+        <div class="nimbus_info">
+            With Nimbus account you can comment your screenshots and share them with your friends and colleagues.
+        </div>
+        <div class="nimbus_form">
+            <form id="remind-password" method="POST" novalidate>
+                <p class="email">Email:</p>
+
+                <div>
+                    <label>
+                        <input type="email" name="email" placeholder="email">
+                    </label>
+                </div>
+                <div class="submit nimbus-submit">
+                    <button id="remind-pass" class="save_settings" type="submit" name="confirm"><i
+                            class="icon"></i><span>Remind</span></button>
+                    <button id="remind-flip-login" type="submit" class="save_settings op" name="signin">
+                        <span>Login</span></button>
+                    <button id="remind-flip-register" class="save_settings op" name="signup"><span>Sign up</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+</div>
+<div id="nimbus-account-popup" class="popup_bg">
+    <div class="popup_content">
+        <button class="btn_cancel">No, thanks</button>
+        <div class="nimbus_note_logo"></div>
+        <ul class="nimbus_account_info">
+            <li><i></i>Share screenshots with friends and colleagues</li>
+            <li><i></i>Have access to screenshots anytimes form anywhere</li>
+        </ul>
+        <button class="create_account">Create Account</button>
+    </div>
+</div>
+</body>
+</html>

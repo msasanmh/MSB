@@ -1,0 +1,18 @@
+{
+   "content_scripts": [ {
+      "css": [ "css.css" ],
+      "js": [ "js.js" ],
+      "matches": [ "*://*.thepiratebay.se/*", "*://*.thepiratebay.gy/*" ]
+   } ],
+   "description": "Remove popup ads on The Pirate Bay.",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "48": "icon48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCmfaJJZxyED/K7gkAjmJbX4aVHa2Q63ul2NLSKjsvEGmPvVQX0AxKqzRJGFxvDiqyAeRb3ZZCVh3c8qTo2TtqvofRusHYXCXga+LCkwmIBX1N099zkXV26MON2PPCzF/OSEdyuXi7qQDijIPjNdqfD1WxhtHOqa+kCSuxHFxvfJQIDAQAB",
+   "manifest_version": 2,
+   "name": "Adblock for Pirate Bay",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.38"
+}
