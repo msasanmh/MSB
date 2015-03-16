@@ -1,4 +1,4 @@
-+ ## ___About Original Web Freer 1.1.1.1:___ ##
++ ___About Original Web Freer 1.1.1.1:___
     + In this new version of "Web Freer" there is a lot of features:
         1. ADs improvement!
         2. Installs a windows service as ADs client!
@@ -7,7 +7,7 @@
     + Then I removed all of em so you can use this new version of Web Freer without any Virus/Trojan/ADs.
 
 * * *
-+ ## ___About WebFreer Uninstaller:___ ##
++ ___About WebFreer Uninstaller:___
     + **Note:**
         + When you Run the original Webfreer setup, a threat service (WebClientService.exe) and some systemic threat files will install on your Windows and will remain after uninstalling webfreer!
 		+ If you installed Web Freer 1.1.1.1 before on your Windows and you care about your safety/security/privacy you should uninstall it first.
