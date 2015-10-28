@@ -50,7 +50,7 @@
     + **2.** Antivirus Alert issue Solved by rebuilding "webfreer.exe" so **you have nothing to do with your Antivirus**, This Program is completely clean.
  
 + **Note:**
-    + **Do NOT Remove or Disable Bellow Extension:** *(Removing Own ADs)*
+    + **Do NOT Remove or Disable Below Extension:** *(Removing Own ADs)*
          + **1.** MSasanMH WebFreer Self-Defense Disabler.
          + **2.** Website Blocker (Beta).
          + **3.** Cupcake *(for Supporting Free Network)*.
